@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-image: url("https://images.unsplash.com/photo-1465850238811-80ce79442c7a");
+    width: 100%;
+    opacity: 1;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: static;
+    display: block;
+}
+
+.secondSection {
+    background-image: url("https://thumbs.dreamstime.com/z/watercolor-abstract-pastel-green-background-your-design-167613157.jpg");
+    width: 100%;
+    opacity: 1;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: static;
+    display: block;
+    margin-top: -16px;
+}
+
+.ThirdSection {
+    background-image: url("https://thumbs.dreamstime.com/z/abstract-painted-light-blue-background-wooden-texture-141166031.jpg");
+    width: 100%;
+    opacity: 1;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: static;
+    display: block;
+    margin-top: -16px;
+}
+
+.arrow-up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0px;
+    opacity: 0;
+    transition: .4s opacity;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+}
+
+.restaurantLogo {
+    position: fixed;
+    right: 720px;
+    bottom: 810px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
