@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylescss/styles.css" title="Color">
+</head>
+
+
+<script>
+
+    function showModal(param1, param2, param3) {
+        const modal = document.querySelector('.modal');
+
+        document.querySelector('.picture-modal').src = param1;
+        document.querySelector('.title').innerHTML = param2;
+        document.querySelector('.myDescription').innerHTML = param3;
+
+        modal.classList.add('show');
+    }
+
+
+    function hideModal() {
+        const modal = document.querySelector('.modal');
+        modal.classList.remove('show');
+    }
+
+    window.addEventListener('scroll', function (e) {
+        const arrow = document.querySelector('.arrow-up');
+        if (window.scrollY > 100) {
+            arrow.classList.add('visible');
+        } else {
+            arrow.classList.remove('visible');
+        }
+    });
+
+    function _scrollTop() {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+
+</script>
+
+<body>
+    <div class="header">
+        HEADER
+    </div>
+
+    <div class="second-menu">
+        <button class="button-food">
+            Hamburguesas
+        </button>
+        <button class="button-food">
+            Costillas
+        </button>
+        <button class="button-food">
+            Ensaladas
+        </button>
+        <button class="button-food">
+            Postre
+        </button>
+
+    </div>
+
+    <div class="prueba1">
+        <div class="pink">
+            Hamburguesas
+        </div>
+
+
+        <div class="container">
+            <!-- Hamburguesa 1 -->
+            <div class="card">
+                <div class="picture">
+
+                    <div class="imageContainer">
+                        <img id="image1" class="divPicture"
+                            src="C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger1.jpg">
+                    </div>
+                    <div class="overlay"> <button class="hiddenButton"
+                            onclick="showModal('C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger1.jpg', 'Imagen 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat')">
+                            Ver Imagen </button> </div>
+
+                </div>
+
+                <div class="cardTitle">
+                    <div class="up_left">
+                        <div>
+                            <div id="myTitle"> <span> Card title </span> </div>
+                            <div id="myDescription"> Image from unsplash.com </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Hamburguesa 2 -->
+            <div class="card">
+                <div class="picture">
+
+                    <div class="imageContainer">
+                        <img class="divPicture"
+                            src="C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger2.jpg">
+                    </div>
+                    <div class="overlay"> <button class="hiddenButton"
+                            onclick="showModal('C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger2.jpg', 'Imagen 2', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur')">
+                            Ver Imagen </button> </div>
+
+                </div>
+
+                <div class="cardTitle">
+                    <div class="up_left">
+                        <div>
+                            <div> <span> Card title </span> </div>
+                            <div> Image from unsplash.com </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Hamburguesa 3 -->
+            <div class="card">
+                <div class="picture">
+
+                    <div class="imageContainer">
+                        <img class="divPicture"
+                            src="C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger3.jpg">
+                    </div>
+                    <div class="overlay"> <button class="hiddenButton"
+                            onclick="showModal('C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger3.jpg', 'Imagen 3', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ')">
+                            Ver Imagen </button> </div>
+
+                </div>
+
+                <div class="cardTitle">
+                    <div class="up_left">
+                        <div>
+                            <div> <span> Card title </span> </div>
+                            <div> Image from unsplash.com </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="picture">
+
+                    <div class="imageContainer">
+                        <img class="divPicture"
+                            src="C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger4.jpg">
+                    </div>
+                    <div class="overlay"> <button class="hiddenButton"
+                            onclick="showModal('C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger4.jpg', 'Imagen 4', 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.')">
+                            Ver Imagen </button> </div>
+
+                </div>
+
+                <div class="cardTitle">
+                    <div class="up_left">
+                        <div>
+                            <div> <span> Card title </span> </div>
+                            <div> Image from unsplash.com </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="picture">
+
+                    <div class="imageContainer">
+                        <img class="divPicture"
+                            src="C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger5.jpg">
+                    </div>
+                    <div class="overlay"> <button class="hiddenButton"
+                            onclick="showModal('C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger5.jpg', 'Imagen 5', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?')">
+                            Ver Imagen </button> </div>
+
+                </div>
+
+                <div class="cardTitle">
+                    <div class="up_left">
+                        <div>
+                            <div> <span> Card title </span> </div>
+                            <div> Image from unsplash.com </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="picture">
+
+                    <div class="imageContainer">
+                        <img class="divPicture"
+                            src="C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger6.jpg">
+                    </div>
+                    <div class="overlay"> <button class="hiddenButton"
+                            onclick="showModal('C:\Users\pietr\OneDrive\Escritorio\Prueba\Hamburguesas\burger6.jpg', 'Imagen 6', 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?')">
+                            Ver Imagen </button> </div>
+
+                </div>
+
+                <div class="cardTitle">
+                    <div class="up_left">
+                        <div>
+                            <div> <span> Card title </span> </div>
+                            <div> Image from unsplash.com </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- MODAL -->
+
+
+            <div class="modal">
+                <div class="modal-container">
+                    <img class="picture-modal">
+                    <button class="close-icon-button" onclick="hideModal()"> <svg xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000" viewBox="0 0 50 50" width="10px" height="10px">
+                            <path
+                                d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
+                        </svg> </button>
+                    <div class="modal-text">
+                        <div class="title"> Title</div>
+                        <div class="myDescription"></div>
+                        <button class="close-button" onclick="hideModal()"> Cerrar </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <button onclick="_scrollTop()" class="arrow-up">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <svg version="1.1" width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 493.472 493.472" style="enable-background:new 0 0 493.472 493.472;"
+            xml:space="preserve">
+            <g>
+                <g>
+                    <path d="M246.738,0C110.69,0,0.01,110.692,0.01,246.732c0,136.064,110.68,246.74,246.728,246.74s246.724-110.676,246.724-246.74
+                      C493.462,110.692,382.786,0,246.738,0z M361.094,296.68l-8.964,8.972c-2.02,2.012-5.564,2.012-7.576,0l-94.932-94.924
+                      c-0.752-0.756-1.736-1.132-2.72-1.132s-1.976,0.376-2.732,1.132l-94.784,94.768c-2.004,1.996-5.548,1.996-7.56,0l-8.972-8.972
+                      c-2.08-2.076-2.08-5.48,0-7.552l110.16-110.156c0.996-0.984,2.332-1.532,3.996-1.532c1.436,0,2.78,0.548,3.764,1.532
+                      L361.09,289.128C363.174,291.212,363.174,294.604,361.094,296.68z" />
+                </g>
+            </g>
+        </svg>
+
+    </button>
+    </div>
+
+</body>
+
+</html>
