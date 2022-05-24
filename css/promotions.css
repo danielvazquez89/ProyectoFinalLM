@@ -1,71 +1,63 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-    padding: 0;
-}
-
-.content {
-    background-image: url("https://images.unsplash.com/photo-1465850238811-80ce79442c7a");
-    width: 100%;
-    opacity: 1;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #e3dce8;
+    background-image: linear-gradient( 135deg, #b0770d 10%, #e0c022 100%);
+    background-attachment: fixed;
     background-size: cover;
-    position: static;
-    display: block;
 }
 
-.secondSection {
-    background-image: url("https://thumbs.dreamstime.com/z/watercolor-abstract-pastel-green-background-your-design-167613157.jpg");
+#card {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 350px;
+    width: 700px;
+}
+
+
+/* product image  */
+
+.product-image {
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
     width: 100%;
-    opacity: 1;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: static;
-    display: block;
-    margin-top: -16px;
 }
 
-.ThirdSection {
-    background-image: url("https://thumbs.dreamstime.com/z/abstract-painted-light-blue-background-wooden-texture-141166031.jpg");
+#card img {
     width: 100%;
-    opacity: 1;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: static;
-    display: block;
-    margin-top: -16px;
+    height: 100%;
 }
 
-.arrow-up {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 0px;
-    opacity: 0;
-    transition: .4s opacity;
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 120%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
-.arrow-up.visible {
-    opacity: 1;
+.info h2 {
+    text-align: center
 }
 
-.restaurantLogo {
-    position: fixed;
-    right: 720px;
-    bottom: 810px;
-    cursor: pointer;
-    background: none;
-    border: none;
+.product-image:hover .info {
+    transform: translateX(0);
+}
+
+.product-image:hover img {
+    transition: all 0.3s ease-out;
+}
+
+.product-image:hover img {
+    transform: scale(1.2, 1.2);
 }
