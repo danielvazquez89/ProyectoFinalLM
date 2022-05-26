@@ -1,0 +1,58 @@
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 10s linear infinite;
+    overflow: hidden;
+  }
+  .slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+
+  @keyframes animate {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    
+  }
+
+  .slide1{
+    background-image: url("https://fondosmil.com/fondo/75572.jpg");
+    background-size: cover;
+    background-position: center;
+   
+  }
+
+  .slide2{
+    background-image: url("https://fondosmil.com/fondo/75567.jpg");
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+  .slide3 {
+    background-image: url("https://fondosmil.com/fondo/75575.jpg");
+    background-size: cover;
+    background-position: center;
+   
+  }
