@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
 body {
     background: #94dad6;
-    background-image: linear-gradient( 135deg, #eae6d2 10%, #a1bb75 100%);
+    background-image: linear-gradient( 135deg, #696839 10%, #0e024d 100%);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -25,6 +25,7 @@ body {
     height: 100%;
     float: left;
     width: 40%;
+    margin-top: 39px;
 }
 
 #container .product-details h1 {
@@ -51,11 +52,12 @@ body {
     color: #FFF;
     margin: 0;
     animation: chan-sh 6s ease infinite;
+    margin-top: -12px;
 }
 
 @keyframes chan-sh {
     from {
-        content: 'free shipping';
+        content: 'Restaurant';
     }
     to {
         content: 'New';
