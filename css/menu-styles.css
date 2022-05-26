@@ -11,47 +11,22 @@ body {
 
 
 
-.prueba1 {
+.container-burgers {
     background-color: green;
-    height: 500px;
-    position: relative;
+    height: 1195px;
 }
 
-.prueba2 {
+.container-ribs {
     background-color: pink;
-    height: 500px;
-}
-
-.prueba3 {
-    background-color: yellow;
-    height: 500px;
+    height: 650px;
 }
 
 
-
-.main-container {
-    position: relative;
-    display: block;
-    width: 100%;
-    background-color: aquamarine;
-    height: 100vh;
-}
 
 .sidebar.open {
     left: 0px;
 }
 
-
-
-.sidebar {
-    background-color: grey;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left: 100%;
-    transition: .5s left;
-}
 
 
 .top-flex {
@@ -91,12 +66,22 @@ body {
     background-color: transparent;
     cursor: pointer;
     border: none;
+    font-size: 20px;
 }
 
-.pink {
-    padding-left: 30px;
-    padding-top: 10px;
-    background-color: blue;
+.title-burgers {
+    background-color: orange;
+    padding-left: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -121,17 +106,23 @@ body {
 }
 
 
-/* --- PARTE DEL MODAL --- */
-
-
-.container {
-    position: absolute;
+.yellow{
     width: 100%;
+    height: 800px;
+    background-color: yellow;
+}
+
+
+
+.burgers-gallery {
+    width: 100%;
+    height: 1100px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin: auto;
 }
+
 
 .card {
     width: 440px;
