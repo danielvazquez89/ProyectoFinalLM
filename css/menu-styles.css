@@ -13,11 +13,12 @@ body {
 
 .container-burgers {
     background-color: green;
+    height: 1195px;
 }
 
 .container-ribs {
     background-color: pink;
-    height: 400px;
+    height: 650px;
 }
 
 
@@ -116,15 +117,6 @@ body {
 .burgers-gallery {
     width: 100%;
     height: 1100px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: auto;
-}
-
-.ribs-gallery {
-    width: 100%;
-    height: 545px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
