@@ -5,18 +5,12 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap%27');
-
 @media only screen and (min-width: 900px) {
-    .main-box {
-       
-    }
-
+    .main-box {}
 }
 
 @media only screen and (max-width: 900px) and (min-width: 800px) {
-    .main-box {
-
-    }
+    .main-box {}
 }
 
 @media only screen and (min-width: 800px) {
@@ -25,11 +19,9 @@
         padding-top: 250px;
         padding-left: 130px;
     }
-
     .menu-container {
         display: none;
     }
-
     .header-title {
         color: white;
         margin: 0;
@@ -39,8 +31,6 @@
         transform: translateY(-50%);
         margin-left: 30px;
     }
-
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -48,7 +38,6 @@
         width: auto;
         padding-right: 20px;
     }
-
     .menu-container {
         display: flex;
         margin: 0;
@@ -58,22 +47,18 @@
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-
     .menu {
         color: white;
         font-size: large;
         margin-top: 5px;
         margin-right: 10px;
     }
-
     .header-nav {
         display: none;
     }
-
     .web-info {
         display: none;
     }
-
     .header-title {
         margin-left: 20px;
         color: white;
@@ -95,11 +80,9 @@
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-
     .main-content {
         width: auto;
     }
-
     .header-title {
         margin-left: 20px;
         color: white;
@@ -112,6 +95,7 @@
 }
 
 body {
+    background-image: linear-gradient( 135deg, #f0ec1e 10%, #4d4902 100%);
     position: relative;
     width: 100%;
     margin: 0px;
@@ -122,11 +106,9 @@ body {
     border: none;
 }
 
-
 .titles {
     font-family: "Playfair Display", Georgia, serif;
 }
-
 
 .background-image-container {
     overflow: hidden;
@@ -158,7 +140,6 @@ body {
     margin-right: 10px;
 }
 
-
 .what-we-do-link {
     position: relative;
 }
@@ -168,9 +149,8 @@ body {
     top: 8%;
     margin-left: 3px;
     transform: rotate(0deg);
-	transition: .3s transform;
+    transition: .3s transform;
 }
-
 
 header {
     width: auto;
@@ -205,7 +185,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
 
 .header-nav-links {
     box-shadow: inset 0 0px 0 #928951;
@@ -308,7 +287,6 @@ a {
     color: white;
 }
 
-
 .dropdown-menu li:last-child {
     border-bottom: none;
 }
@@ -322,5 +300,3 @@ a {
 .flecha-abajo.open {
     transform: rotate(180deg);
 }
-
-
