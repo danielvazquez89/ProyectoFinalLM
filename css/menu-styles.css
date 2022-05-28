@@ -12,7 +12,6 @@ body {
 
 /*-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PROBANDO CÓDIGO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- */
 
-
 .food-name {
     font-size: 40px;
     font-family: 'Luckiest Guy', cursive;
@@ -22,13 +21,24 @@ body {
     margin-top: 5px;
   }
 
+  .food-name {
+    font-size: 50px;
+    position: absolute;
+  }
+
   .food-button {
     position: absolute;
     width: 400px;
     height: 400px;
     background: transparent;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
+  }
+
+  .food-image {
+    position: absolute;
+    width: 400px;
+    height: 400px;
   }
 
   .picture {
@@ -36,14 +46,12 @@ body {
     height: 400px;
   }
 
-  .food-container {
+  .container {
     position: relative;
-    background-image: url(../Imagenes/burger1.jpg);
     background-size: 400px 400px;
     width: 400px;
     height: 400px;
   }
-
 
   .overlay {
     position: absolute;
@@ -58,16 +66,14 @@ body {
     color: white;
     font-size: 20px;
     cursor: pointer;
-
   }
 
-  .food-container:hover .overlay {
+  .container:hover .overlay {
     opacity: 1;
   }
-  
-  .food-container:hover .food-name{
-    color: white;
 
+  .container:hover .food-name {
+    color: white;
   }
 
 
@@ -77,20 +83,56 @@ body {
 
 /*-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PROBANDO CÓDIGO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- */
 
-
+.button-ribs{
+    width: 200px;
+    height: 80px;
+    border: 4px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    background: transparent;
+    margin: 5px;
+    cursor: pointer;
+}
 
 
 .container-burgers {
-    background-color: green;
-    height: 1195px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Imagenes/burger-grill-background.jpg);
+    opacity: 0.8;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
 .container-ribs {
-    background-color: pink;
-    height: 650px;
+    width: 100%;
+    background-image: url(../Imagenes/ribs-background.jpg);
+    opacity: 0.8;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
+.subcontainer-ribs{
+    width: 70%;
+    height: 400px;
+}
 
+.ribs-gallery{
+    display: flex;
+    padding-top: 45px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
 
 .sidebar.open {
     left: 0px;
@@ -139,6 +181,7 @@ body {
 }
 
 .title-burgers {
+    margin-top:0;
     background-color: orange;
     padding-left: 35px;
     margin-left: auto;
@@ -153,7 +196,29 @@ body {
     justify-content: center;
 }
 
+.title-food{
+    font-size: 40px;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.menu-ribs{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-overlay {
+    background: rgba(0, 0, 0, 0.533);
+    width: 100%;
+    height: 100%;
+}
 
 /* ---- SCROLLUP BUTTON ---- */
 
@@ -184,13 +249,14 @@ body {
 
 
 .burgers-gallery {
+    background-color: yellow;
     width: 100%;
-    height: 1100px;
+    height: 100vh;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
-    margin: auto;
+    justify-content: space-evenly;
+
 }
 
 
