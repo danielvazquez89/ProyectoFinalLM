@@ -10,6 +10,75 @@ body {
 }
 
 
+/*-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PROBANDO CÓDIGO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- */
+
+
+.food-name {
+    font-size: 40px;
+    font-family: 'Luckiest Guy', cursive;
+    position: absolute;
+    color: red;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .food-button {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: none;
+    cursor:pointer;
+  }
+
+  .picture {
+    width: 400px;
+    height: 400px;
+  }
+
+  .food-container {
+    position: relative;
+    background-image: url(../Imagenes/burger1.jpg);
+    background-size: 400px 400px;
+    width: 400px;
+    height: 400px;
+  }
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    transition: .4s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+
+  .food-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .food-container:hover .food-name{
+    color: white;
+
+  }
+
+
+  
+
+
+
+/*-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PROBANDO CÓDIGO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- */
+
+
+
 
 .container-burgers {
     background-color: green;
@@ -119,18 +188,12 @@ body {
     height: 1100px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     margin: auto;
 }
 
 
-.card {
-    width: 440px;
-    height: 440px;
-    margin-left: 30px;
-    margin-top: 30px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
 
 .divPicture {
     width: 440px;
@@ -171,27 +234,7 @@ span {
     height: 340px;
 }
 
-.overlay {
-    width: 440px;
-    height: 340px;
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    /* Black see-through */
-    color: #f1f1f1;
-    transition: .5s ease;
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.picture:hover .overlay {
-    opacity: 1;
-}
 
 .hiddenButton {
     background-color: transparent;
@@ -206,20 +249,6 @@ span {
 }
 
 
-
-/* --- AÑADIR ZOOM AL HACER HOVER SOBRE LAS IMÁGENES --- */
-
-img {
-    transition: all.5s;
-}
-
-.picture:hover .divPicture {
-    transform: scale(1.2);
-}
-
-.imageContainer {
-    overflow: hidden;
-}
 
 
 /* --- PARTE DEL MODAL --- */
