@@ -6,7 +6,6 @@
 body {
     font-family: Fira Sans, Helvetica, Arial, sans-serif;
     margin: 0;
-
 }
 
 
@@ -78,8 +77,6 @@ body {
 
 
 
-  
-
 
 
 /*-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PROBANDO CÓDIGO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- */
@@ -94,38 +91,66 @@ body {
     background:transparent;
     margin: 5px;
     cursor: pointer;
+    transition: transform .2s;
+    margin: 15px;
+}
+
+.button-ribs:hover {
+    transform: scale(1.1);
 }
 
 
 .container-burgers {
     width: 100%;
     height: 100vh;
+    position: relative;
     background-image: url(../Imagenes/burger-grill-background.jpg);
-    opacity: 0.8;
     background-repeat:no-repeat;
     background-size:cover;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
+
+.subcontainer-burgers{
+    position: absolute;
+    width: 70%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .container-ribs {
     width: 100%;
     height: 100vh;
+    position: relative;
     background-image: url(../Imagenes/ribs-background.jpg);
-    opacity: 0.8;
     background-repeat:no-repeat;
     background-size:cover;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 5px;
 }
 
 .subcontainer-ribs{
+    position: absolute;
     width: 70%;
     height: 400px;
 }
+
+.overlay-burgers-ribs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+}
+
 
 .ribs-gallery{
     display: flex;
@@ -135,20 +160,6 @@ body {
     justify-content: space-around;
     margin: auto;
 }
-
-.sidebar.open {
-    left: 0px;
-}
-
-
-
-.top-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 
 .header {
     width: 100%;
