@@ -47,9 +47,9 @@ body {
 
   .container {
     position: relative;
-    background-size: 400px 400px;
-    width: 400px;
-    height: 400px;
+    background-size: 350px 350px;
+    width: 350px;
+    height: 350px;
   }
 
   .overlay {
@@ -109,16 +109,16 @@ body {
     background-size:cover;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .subcontainer-burgers{
-    position: absolute;
     width: 70%;
-    background-color: yellow;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -150px;
 }
 
 
