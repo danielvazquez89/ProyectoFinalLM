@@ -6,46 +6,171 @@
 body {
     font-family: Fira Sans, Helvetica, Arial, sans-serif;
     margin: 0;
-
 }
 
+
+/*-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PROBANDO CÓDIGO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- */
+
+.food-name {
+    font-size: 40px;
+    font-family: 'Luckiest Guy', cursive;
+    position: absolute;
+    color: red;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .food-name {
+    font-size: 40px;
+    position: absolute;
+  }
+
+  .food-button {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .food-image {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+  }
+
+  .picture {
+    width: 400px;
+    height: 400px;
+  }
+
+  .container {
+    position: relative;
+    background-size: 350px 350px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    transition: .4s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .container:hover .food-name {
+    color: white;
+  }
+
+
+
+
+
+/*-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PROBANDO CÓDIGO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- */
+
+.button-ribs{
+    width: 200px;
+    height: 80px;
+    border: 4px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    background:transparent;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform .2s;
+    margin: 15px;
+}
+
+.button-ribs:hover {
+    transform: scale(1.1);
+}
 
 
 .container-burgers {
-    background-color: green;
-    height: 1195px;
-}
-
-.container-ribs {
-    background-color: pink;
-    height: 650px;
-}
-
-
-
-.sidebar.open {
-    left: 0px;
-}
-
-
-
-.top-flex {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../Imagenes/burger-grill-background.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.subcontainer-burgers{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -150px;
 }
 
 
+.container-ribs {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../Imagenes/ribs-background.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.subcontainer-ribs{
+    position: absolute;
+    width: 70%;
+    height: 400px;
+}
+
+.overlay-burgers-ribs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+}
+
+
+.ribs-gallery{
+    display: flex;
+    padding-top: 45px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
 .header {
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: #202020;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
     flex-direction: wrap;
 }
 
@@ -63,13 +188,19 @@ body {
 .button-food {
     height: 80px;
     width: 15%;
-    background-color: transparent;
+    background: transparent;
     cursor: pointer;
     border: none;
     font-size: 20px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.button-food:hover {
+    color: white;
 }
 
 .title-burgers {
+    margin-top:0;
     background-color: orange;
     padding-left: 35px;
     margin-left: auto;
@@ -84,7 +215,30 @@ body {
     justify-content: center;
 }
 
+.title-food{
+    font-size: 40px;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.menu-ribs{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Fira Sans, Helvetica, Arial, sans-serif;
+}
+
+.image-overlay {
+    background: rgba(0, 0, 0, 0.533);
+    width: 100%;
+    height: 100%;
+}
 
 /* ---- SCROLLUP BUTTON ---- */
 
@@ -115,22 +269,17 @@ body {
 
 
 .burgers-gallery {
+    background-color: yellow;
     width: 100%;
-    height: 1100px;
+    height: 100vh;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
 
-.card {
-    width: 440px;
-    height: 440px;
-    margin-left: 30px;
-    margin-top: 30px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
 
 .divPicture {
     width: 440px;
@@ -171,27 +320,7 @@ span {
     height: 340px;
 }
 
-.overlay {
-    width: 440px;
-    height: 340px;
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    /* Black see-through */
-    color: #f1f1f1;
-    transition: .5s ease;
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.picture:hover .overlay {
-    opacity: 1;
-}
 
 .hiddenButton {
     background-color: transparent;
@@ -206,20 +335,6 @@ span {
 }
 
 
-
-/* --- AÑADIR ZOOM AL HACER HOVER SOBRE LAS IMÁGENES --- */
-
-img {
-    transition: all.5s;
-}
-
-.picture:hover .divPicture {
-    transform: scale(1.2);
-}
-
-.imageContainer {
-    overflow: hidden;
-}
 
 
 /* --- PARTE DEL MODAL --- */
