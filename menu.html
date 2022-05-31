@@ -50,6 +50,21 @@
             behavior: 'smooth'
         });
     }
+
+    
+    function _scrollRibs() {
+        window.scroll({
+            top: 950,
+            behavior: 'smooth'
+        });
+    }
+
+    function _scrollDesserts() {
+        window.scroll({
+            top: 1670,
+            behavior: 'smooth'
+        });
+    }
 </script>
 
 <body>
@@ -79,11 +94,11 @@
         <button class="button-food" onclick="_scrollBurgers()">
             Hamburguesas
         </button>
-        <button class="button-food">
+        <button class="button-food" onclick=" _scrollRibs()">
             Costillas
         </button>
-        <button class="button-food">
-            Postre
+        <button class="button-food" onclick="_scrollDesserts()">
+            Postres
         </button>
 
     </div>
@@ -229,12 +244,13 @@
         </div>
         <div class="desserts-menu">
             <div class="desserts">
+   
                 <div class="food-image-container">
                     <img src="Imagenes/Cheesecake.jpg" class="dessert-image">
                 </div>
-
-                <div class="overlay">
-
+             
+                <div class="overlay-dessert">
+                   
                 </div>
                 <button class="food-button">
 
@@ -242,23 +258,22 @@
             </div>
 
             <div class="desserts">
+   
                 <div class="food-image-container">
                     <img src="Imagenes/brownie.jpg" class="dessert-image">
                 </div>
-
-                <div class="overlay">
-
+             
+                <div class="overlay-dessert">
+                   
                 </div>
                 <button class="food-button">
 
                 </button>
-            </div>
+            </div>         
+           
         </div>
 
     </div>
-
-
-
 
     <!-- MODAL -->
 

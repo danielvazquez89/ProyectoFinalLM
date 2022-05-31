@@ -179,6 +179,28 @@ body {
     margin-top: 5px;
 }
 
+.overlay-dessert{
+    position: absolute; 
+    bottom: 0; 
+    width: 400px;
+    height: 500px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.food-image-container{
+    position: absolute;
+}
+
 
 .desserts{
     position: relative;
@@ -193,7 +215,13 @@ body {
     transform: scale(1.1);
 }
 
+.desserts:hover .overlay-dessert{
+    opacity: 1;
+    top: 0;
+}
+
 .dessert-image{
+    display: block;
     border-radius: 5px;
     position: absolute;
     width: 400px;
