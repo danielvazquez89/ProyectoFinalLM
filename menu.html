@@ -43,6 +43,13 @@
             behavior: 'smooth'
         });
     }
+
+    function _scrollBurgers() {
+        window.scroll({
+            top: 230,
+            behavior: 'smooth'
+        });
+    }
 </script>
 
 <body>
@@ -69,7 +76,7 @@
     </div>
 
     <div class="second-menu">
-        <button class="button-food">
+        <button class="button-food" onclick="_scrollBurgers()">
             Hamburguesas
         </button>
         <button class="button-food">
