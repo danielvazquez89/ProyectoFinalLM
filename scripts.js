@@ -43,10 +43,9 @@ function hideModal() {
 function showModal(imageSrc, title, description) {
     const modal = document.querySelector('.modal');
 
-        document.querySelector('.picture-modal').src = param1;
-        document.querySelector('.title').innerHTML = param2;
-        document.querySelector('.myDescription').innerHTML = param3;
-
+        document.querySelector('.picture-modal').src = imageSrc;
+        document.querySelector('.title').innerHTML = title;
+        document.querySelector('.myDescription').innerHTML = description;
         modal.classList.add('show');
 }
 
