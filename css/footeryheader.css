@@ -1,4 +1,10 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap%27');
 
 .footer-dark {
     padding:50px 0;
@@ -89,3 +95,162 @@
     font-size:13px;
     margin-bottom:0;
   }
+
+  a {
+    text-decoration: none !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.header-nav-links {
+  box-shadow: inset 0 0px 0 #928951;
+  transition: box-shadow 0.2s ease-i;
+  margin-left: 40px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header-nav-links:hover {
+  box-shadow: inset 0 -4px 0 #928951;
+}
+
+.contact-links-container {
+  margin: 0%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.flecha-abajo.open {
+  transform: rotate(180deg);
+}
+
+header {
+  position: relative;
+  bottom: 10%;
+  height: 100px;
+  background-color: #282d32;
+}
+
+.dropdown {
+  /*background-color: #b81c1c80;*/
+  position: absolute;
+  z-index: 1;
+  top: 105%;
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 1%;
+  transition: .5s bottom;
+}
+
+.dropdown.open {
+  display: block;
+}
+
+.dropdown.close {
+  display: none;
+}
+
+.arrow-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 2;
+  background: none;
+  border: none;
+  padding: 0px;
+  opacity: 0;
+  transition: .4s opacity;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+}
+
+.arrow-up-svg {
+  fill: #0000009e;
+}
+
+.dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #80808024;
+}
+
+.dropdown-menu li:hover {
+  background-color: #bdbdbd;
+  cursor: pointer;
+  color: white;
+}
+
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.bottom-part {
+  width: 100%;
+  height: 250px;
+  background-color: red;
+}
+
+.flecha-abajo.open {
+  transform: rotate(180deg);
+}
+
+
+.header-nav {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-right: 10px;
+}
+
+
+.what-we-do-link {
+  position: relative;
+}
+
+.flecha-abajo {
+  position: absolute;
+  top: 8%;
+  margin-left: 3px;
+  transform: rotate(0deg);
+  transition: .3s transform;
+}
+
+.header-title {
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 30px;
+}
+
+.titles {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.menu-bars {
+  background: none;
+  border: none;
+}
+
+.menu-container {
+  display: none;
+}
