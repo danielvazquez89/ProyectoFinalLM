@@ -42,7 +42,39 @@ function hideModal() {
 }
 function showModal(imageSrc, title, description) {
     const modal = document.querySelector('.modal');
-    var string = `<img src="${imageSrc}" class="modal-image"><button onclick="hideModal()" class="cross-button">&#10006;</button><div class="modal-footer"><h3 class="modal-title">${title}</h3><div class="modal-description">${description}</div><button class="hideButton" onclick="hideModal()">Cerrar</button><button onclick="viewFullScreen()">View Full Screen</button></div>`
-    document.querySelector('.modal-content').innerHTML = string;
-    modal.classList.add('show');
+
+        document.querySelector('.picture-modal').src = param1;
+        document.querySelector('.title').innerHTML = param2;
+        document.querySelector('.myDescription').innerHTML = param3;
+
+        modal.classList.add('show');
+}
+
+function _scrollTop() {
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+function _scrollBurgers() {
+    window.scroll({
+        top: 230,
+        behavior: 'smooth'
+    });
+}
+
+
+function _scrollRibs() {
+    window.scroll({
+        top: 950,
+        behavior: 'smooth'
+    });
+}
+
+function _scrollDesserts() {
+    window.scroll({
+        top: 1670,
+        behavior: 'smooth'
+    });
 }
