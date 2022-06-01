@@ -155,7 +155,6 @@ body {
     line-height: 1.9;
     text-align: left;
     font-size: 120%;
-    cursor: pointer;
     color: #FFF;
     height: 100%;
     width: 100%;
@@ -185,4 +184,8 @@ body {
 
 .product-image:hover img {
     transform: scale(1.2, 1.2);
+}
+
+a {
+    cursor: pointer;
 }
