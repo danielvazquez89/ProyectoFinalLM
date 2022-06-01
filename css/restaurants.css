@@ -8,6 +8,8 @@ body {
 }
 
 .Cards {
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -21,8 +23,8 @@ body {
     border-radius: 5px;
     overflow: hidden;
     margin: 20px;
-    height: 350px;
-    width: 700px;
+    height: 300px;
+    width: 620px;
 }
 
 .product-details {
@@ -192,55 +194,4 @@ body {
 
 a {
     cursor: pointer;
-}
-
-
-/* booton*/
-
-.wrapper {
-    margin-top: 35px;
-    margin-left: 78px;
-    transform: translate(-50%, -50%);
-}
-
-.bookIcon {
-    display: block;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-    color: #fff;
-}
-
-.bookIcon span {
-    position: relative;
-    z-index: 2;
-    color: rgb(0, 0, 0);
-}
-
-.bookIcon:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #9a9a9a;
-    transition: all .35s;
-}
-
-.bookIcon:hover {
-    color: #fff;
-}
-
-.bookIcon:hover:after {
-    width: 100%;
 }
