@@ -19,20 +19,6 @@ function openSidebar() {
     document.querySelector('.sidebar').classList.add('open');
 }
 
-function openDropDown() {
-    var dropdownContent = document.querySelector('.dropdown');
-    var svgIcon = document.querySelector('.flecha-abajo');
-    var isOpen = dropdownContent.classList.contains('open');
-
-    if (isOpen) {
-        dropdownContent.classList.remove('open');
-        svgIcon.classList.remove('open');
-    } else {
-        dropdownContent.classList.add('open');
-        svgIcon.classList.add('open');
-    }
-}
-
 function closeSidebar() {
     document.querySelector('.sidebar').classList.remove('open');
 }
