@@ -198,6 +198,7 @@ header {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 30px;
+  font-size: 30px;
 }
 
 .titles {
