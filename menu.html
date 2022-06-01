@@ -11,65 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <script src="scripts.js"></script>
 </head>
 
-
-<script>
-
-    function showModal(param1, param2, param3) {
-        const modal = document.querySelector('.modal');
-
-        document.querySelector('.picture-modal').src = param1;
-        document.querySelector('.title').innerHTML = param2;
-        document.querySelector('.myDescription').innerHTML = param3;
-
-        modal.classList.add('show');
-    }
-
-
-    function hideModal() {
-        const modal = document.querySelector('.modal');
-        modal.classList.remove('show');
-    }
-
-    window.addEventListener('scroll', function (e) {
-        const arrow = document.querySelector('.arrow-up');
-        if (window.scrollY > 100) {
-            arrow.classList.add('visible');
-        } else {
-            arrow.classList.remove('visible');
-        }
-    });
-
-    function _scrollTop() {
-        window.scroll({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-
-    function _scrollBurgers() {
-        window.scroll({
-            top: 230,
-            behavior: 'smooth'
-        });
-    }
-
-    
-    function _scrollRibs() {
-        window.scroll({
-            top: 950,
-            behavior: 'smooth'
-        });
-    }
-
-    function _scrollDesserts() {
-        window.scroll({
-            top: 1670,
-            behavior: 'smooth'
-        });
-    }
-</script>
 
 <body>
     <header>
