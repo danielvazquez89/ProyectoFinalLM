@@ -103,7 +103,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(../Imagenes/burger-grill-background.jpg);
+    background-image: url(../Imagenes/grill_background.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     display: flex;
@@ -509,23 +509,23 @@ span {
 /*-------- ACCORDION ---------*/
 
 .burger-1{
-    background-image: url("burger1.jpg");
+    background-image: url("../Imagenes/burger1.jpg");
 }
 
 .burger-2{
-    background-image: url("Imagenes/burger2.jpg");
+    background-image: url("../Imagenes/burger2.jpg");
 }
 
 .burger-3{
-    background-image: url(Imagenes/burger3.jpg);
+    background-image: url("../Imagenes/burger3.jpg");
 }
 
 .burger-4{
-    background-image: url(Imagenes/burger4.jpg);
+    background-image: url("../Imagenes/burger4.jpg");
 }
 
 .burger-5{
-    background-image: url(Imagenes/burger5.jpg);
+    background-image: url("../Imagenes/burger5.jpg");
 }
 
 .accordion-container{
