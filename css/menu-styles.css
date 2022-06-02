@@ -427,6 +427,7 @@ span {
 
 /* --- PARTE DEL MODAL --- */
 
+
 .modal {
     position: fixed;
     z-index: 7;
@@ -435,40 +436,42 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 20px;
 
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
-    visibility: hidden;
-    opacity: 0;
+    
+    visibility: hidden;    
+    opacity: 0;    
 
 }
 
 .show {
     visibility: visible;
     opacity: 1;
-    display: block !important;
+    display:block !important;
 }
 
-.modal-container {
+.modal-container{
     width: 540px;
     height: 625px;
     position: relative;
+    margin-left: 500px;
+    margin-top: 50px;
 }
 
-.picture-modal {
+._picture-modal{
     width: 540px;
     height: 440px;
     display: flex;
     flex-direction: column;
 }
 
-.modal-text {
+.modal-text{
     background-color: #ffffff;
     width: 540px;
-    height: 185px;
+    height: 150px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -476,29 +479,28 @@ span {
     font-size: 15px;
 }
 
-.title {
+.modal-title{
     font-size: 20px;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.close-button {
+.close-button{
     width: 80px;
     margin-top: 15px;
     display: block;
 }
 
-.close-icon-button {
-    position: absolute;
-    margin-top: 5px;
-    margin-right: 5px;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    width: 20px;
-    height: 20px;
-    display: block;
+.close-icon-button{
+    position:absolute;
+    margin-bottom: 3px;
+    top:0;
+    right:0;
+    width:20px;
+    height:20px;
+    display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #d4d9dd;
     opacity: 0.4;
     border: none;
