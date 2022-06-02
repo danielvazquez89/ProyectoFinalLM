@@ -36,10 +36,12 @@ function openFullscreen(elem) {
         elem.msRequestFullscreen();
     }
 }
+
 function hideModal() {
     const modal = document.querySelector('.modal');
     modal.classList.remove('show');
 }
+/*
 function showModal(param1, param2, param3) {
     const modal = document.querySelector('.modal');
 
@@ -50,6 +52,7 @@ function showModal(param1, param2, param3) {
     modal.classList.add('show');
     console.log('hola');
 }
+*/
 
 function _scrollTop() {
     window.scroll({
@@ -78,4 +81,36 @@ function _scrollDesserts() {
         top: 1618,
         behavior: 'smooth'
     });
+}
+
+
+/*----------------Close modal by clicking outside ------------------- */
+
+
+function showBox(param1, param2, param3) {
+
+    const modal = document.querySelector('.modal');
+        
+    document.querySelector('._picture-modal').src = param1;
+    document.querySelector('.modal-title').innerHTML = param2;
+    document.querySelector('.modal-mydescription').innerHTML = param3;
+  
+  	if(modal.classList.contains('show')) {
+    	modal.classList.remove('show');
+    } else {
+    	modal.classList.add('show');
+        console.log('hola');
+   }    
+
+
+document.addEventListener('click', function(e) {
+    const clickedPaths = e.path;
+    const button = document.querySelector('.modal');
+    const modal = document.querySelector('.container-picture');
+  
+  if(!clickedPaths.includes(modal) && e.target == button) {
+      button.classList.remove('show');
+      console.log('adiós');
+  }
+})
 }

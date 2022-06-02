@@ -80,12 +80,6 @@ body {
     transform: scale(1.1);  
   }
 
-
-
-
-
-/*-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PROBANDO CÓDIGO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- */
-
 .button-ribs{
     width: 200px;
     height: 80px;
@@ -425,7 +419,7 @@ span {
 
 
 
-/* --- PARTE DEL MODAL --- */
+/* --- MODAL --- */
 
 
 .modal {
@@ -454,11 +448,12 @@ span {
 }
 
 .modal-container{
+    position: absolute;
     width: 540px;
     height: 625px;
     position: relative;
-    margin-left: 500px;
-    margin-top: 50px;
+    margin-left: 30%;
+    margin-top: 55px;
 }
 
 ._picture-modal{
