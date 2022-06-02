@@ -89,7 +89,7 @@
 /* Extra content behind of the photo*/
 
 .restaurantInfo {
-    background: rgba(27, 26, 26, 0.9);
+    background: rgba(44, 44, 44, 0.9);
     font-family: 'Farsan', cursive;
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
@@ -176,6 +176,13 @@
     color: white;
     font-weight: 700;
     font-size: 50px;
+}
+
+
+/* Stars*/
+
+.checked {
+    color: orange;
 }
 
 
