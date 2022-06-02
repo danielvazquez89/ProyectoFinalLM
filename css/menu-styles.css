@@ -111,14 +111,6 @@ body {
     justify-content: center;
 }
 
-.subcontainer-burgers{
-    width: 70%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -150px;
-}
 
 
 .container-ribs {
@@ -451,9 +443,9 @@ span {
     position: absolute;
     width: 540px;
     height: 625px;
-    position: relative;
-    margin-left: 30%;
-    margin-top: 55px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 ._picture-modal{
@@ -509,23 +501,23 @@ span {
 /*-------- ACCORDION ---------*/
 
 .burger-1{
-    background-image: url("../Imagenes/burger1.jpg");
+    background-image: url(../Imagenes/burger1.jpg);
 }
 
 .burger-2{
-    background-image: url("../Imagenes/burger2.jpg");
+    background-image: url(../Imagenes/burger2.jpg);
 }
 
 .burger-3{
-    background-image: url("../Imagenes/burger3.jpg");
+    background-image: url(../Imagenes/burger3.jpg);
 }
 
 .burger-4{
-    background-image: url("../Imagenes/burger4.jpg");
+    background-image: url(../Imagenes/burger4.jpg);
 }
 
 .burger-5{
-    background-image: url("../Imagenes/burger5.jpg");
+    background-image: url(../Imagenes/burger5.jpg);
 }
 
 .accordion-container{
@@ -555,6 +547,7 @@ span {
     flex: 1 1 0%;
     overflow: hidden;
     transition: flex .4s;
+    border: none;
 }
 
 .accordion-item:hover{
@@ -575,7 +568,7 @@ span {
 }
 
 .accordion-content{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
     right: 0;
@@ -596,7 +589,8 @@ span {
 }
 
 .accordion-title{
-    font-size: 40px;
+    font-size: 60px;
+    color: white;
     font-family: 'Luckiest Guy', cursive;
     transform: translate3d(0, -60px,0);
     line-height: 1;
