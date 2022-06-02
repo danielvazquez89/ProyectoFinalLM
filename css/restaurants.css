@@ -132,6 +132,11 @@
     cursor: pointer;
 }
 
+.blackLine {
+    background-color: #7d7d7d;
+    height: 4px;
+}
+
 
 /*Medias Querys*/
 
