@@ -17,19 +17,6 @@ body {
     margin-top: 5px;
 }
 
-.food-name {
-    font-size: 40px;
-    position: absolute;
-}
-
-.food-button {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
 
 .food-image {
     position: absolute;
@@ -243,7 +230,7 @@ body {
 
 .button-food {
     height: 80px;
-    width: 15%;
+    width: 25%;
     background: transparent;
     cursor: pointer;
     border: none;
@@ -608,6 +595,7 @@ span {
 }
 
 
+
 @media screen and (max-width: 1375px) {
 
     .dessert-image {
@@ -638,7 +626,6 @@ span {
         height: 200px;
     }
 
-
     .desserts-menu {
         background-color: green;
         height: 100vh;
@@ -652,6 +639,21 @@ span {
 
     .desserts-invitation{
         font-size: 40px;
+    }
+
+    .modal-container{
+        width: 440px;
+        height: 525px;
+    }
+
+    ._picture-modal{
+        width: 440px;
+        height: 340px;
+    }
+
+    .modal-text{
+        width: 440px;
+        height: 100px;
     }
 }
 
