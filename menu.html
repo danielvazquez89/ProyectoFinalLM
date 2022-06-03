@@ -40,13 +40,13 @@
     </header>
 
     <div class="second-menu">
-        <button class="button-food" onclick="_scrollBurgers()">
+        <button class="button-food" onclick="_scroll_through_Menu('burgers-options')">
             Hamburguesas
         </button>
-        <button class="button-food" onclick=" _scrollRibs()">
+        <button class="button-food" onclick="_scroll_through_Menu('ribs-options')">
             Costillas
         </button>
-        <button class="button-food" onclick="_scrollDesserts()">
+        <button class="button-food" onclick="_scroll_through_Menu('desserts-options')">
             Postres
         </button>
 
@@ -56,7 +56,7 @@
     <!-- MODAL -->
 
 
-    <div class="container-burgers">
+    <div id="burgers-options" class="container-burgers">
 
 
         <div class="modal">
@@ -120,7 +120,7 @@
 
     <!---------   RIBS  ------------->
 
-    <div class="container-ribs">
+    <div id="ribs-options"  class="container-ribs">
         <div class="overlay-burgers-ribs">
 
         </div>
@@ -146,7 +146,7 @@
     </div>
 
 
-    <div class="container-desserts">
+    <div id="desserts-options" class="container-desserts">
         <div class="overlay-burgers-ribs">
 
         </div>
