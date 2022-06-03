@@ -17,21 +17,26 @@
 </head>
 
 <body>
-    <header>
-        <a href="./index.html" class="header-title titles">Hamburguesas Paco</a>
+    <header class="navbar">
+        <a href="./index.html" class="navbar-brand header-title titles">Hamburguesas Paco</a>
         <nav class="header-nav">
             <a href="./restaurants.html" class="header-nav-links">Restaurantes</a>
-            <a href="#" class="header-nav-links what-we-do-link">Nosotros</a>
+            <a href="./trabaja-con-nosotros.html" class="header-nav-links what-we-do-link">Trabaja Con Nosotros</a>
             <a href="./menu.html" class="header-nav-links">Menu</a>
         </nav>
         <div class="menu-container">
-            <div class="menu titles">Menu</div>
-            <button onclick="openSidebar()" class="menu-bars">
-                <div class="short-bar"></div>
-                <div class="long-bar"></div>
-                <div class="long-bar"></div>
-                <div class="short-bar"></div>
+            <button onclick="openDropDown()" class="menu-bars">
+                <img class="hamburguesa" src="./Imagenes/hamburgo.png">
+                <div class="dropdown">
+                    <ul class="dropdown-menu">
+                        <li> Menu 1</li>
+                        <li> Menu 2</li>
+                        <li> Menu 3</li>
+                        <li> Menu 4</li>
+                    </ul>
+                </div>
             </button>
+        </div>
         </div>
     </header>
 

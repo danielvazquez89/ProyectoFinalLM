@@ -16,41 +16,28 @@
 
 
 <body>
-    <header>
-        <a href="./index.html" class="header-title titles">Hamburguesas Paco</a>
+    <header class="navbar">
+        <a href="./index.html" class="navbar-brand header-title titles">Hamburguesas Paco</a>
         <nav class="header-nav">
             <a href="./restaurants.html" class="header-nav-links">Restaurantes</a>
-            <a href="#" class="header-nav-links what-we-do-link">Nosotros</a>
+            <a href="./trabaja-con-nosotros.html" class="header-nav-links what-we-do-link">Trabaja Con Nosotros</a>
             <a href="./menu.html" class="header-nav-links">Menu</a>
         </nav>
         <div class="menu-container">
-            <div class="menu titles">Menu</div>
-            <button onclick="openSidebar()" class="menu-bars">
-                <div class="short-bar"></div>
-                <div class="long-bar"></div>
-                <div class="long-bar"></div>
-                <div class="short-bar"></div>
+            <button onclick="openDropDown()" class="menu-bars">
+                <img class="hamburguesa" src="./Imagenes/hamburgo.png">
+                <div class="dropdown">
+                    <ul class="dropdown-menu">
+                        <li> Menu 1</li>
+                        <li> Menu 2</li>
+                        <li> Menu 3</li>
+                        <li> Menu 4</li>
+                    </ul>
+                </div>
             </button>
         </div>
-    </header>
-
-    <!-- MODAL -->
-
-
-    <div class="modal" onclick="hideModal()">
-        <div class="modal-container">
-            <img class="picture-modal">
-            <button class="close-icon-button" onclick="hideModal()"> <svg xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000" viewBox="0 0 50 50" width="10px" height="10px">
-                    <path
-                        d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
-                </svg> </button>
-            <div class="modal-text">
-                <div class="title"> Title</div>
-                <div class="myDescription"></div>
-            </div>
         </div>
-    </div>
+    </header>
 
     <div class="second-menu">
         <button class="button-food" onclick="_scrollBurgers()">
@@ -66,110 +53,72 @@
     </div>
 
 
+    <!-- MODAL -->
+
+
     <div class="container-burgers">
-        <div class="overlay-burgers-ribs">
+
+
+        <div class="modal">
+            <div class="modal-container">
+                <img class="_picture-modal">
+                <button class="close-icon-button" onclick="hideModal()"> <svg xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000" viewBox="0 0 50 50" width="15px" height="15px">
+                        <path
+                            d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
+                    </svg> </button>
+                <div class="modal-text">
+                    <div class="modal-title"> Title</div>
+                    <div class="modal-mydescription"></div>
+                </div>
+            </div>
         </div>
-
-        <div class="subcontainer-burgers">
-
-            <div class="container-picture">
-                <div class="food-image-container">
-                    <img src="Imagenes/burger1.jpg" class="food-image">
-                </div>
-
-                <div class="food-name">
-                    Viva la trufa
-                </div>
-                <div class="overlay">
-
-                </div>
-                <button class="food-button"
-                    onclick="showModal('Imagenes/burger1.jpg', 'Viva la trufa', 'Dos carnes de vacuno maduradas al estilo smash (crujiente por fuera y jugosa por dentro), salsa de trufa y setas de temporada, montado en dos revanadas de pan brioche.')">
-
+        <div class="accordion-container">
+            <div class="accordion-gallery">
+                <button class="accordion-item burger-1" onclick="showBox('Imagenes/burger1.jpg', 'Viva la trufa', 'Dos carnes de vacuno maduradas al estilo smash (crujiente por fuera y jugosa por dentro), salsa de trufa y setas de temporada, montado en dos revanadas de pan brioche.')">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> Viva la trufa </h1>
+                        </div>
+                    </div>
                 </button>
-            </div>
-
-            <div class="container-picture">
-                <div class="food-image-container">
-                    <img src="Imagenes/burger2.jpg" class="food-image">
-                </div>
-
-                <div class="food-name">
-                    La gourmet
-                </div>
-                <div class="overlay">
-
-                </div>
-                <button class="food-button"
-                    onclick="showModal('Imagenes/burger2.jpg', 'La gourmet', 'Carne de buey con cebolla caramelizada, queso gorgonzola y salsa Strogonoff.')">
-
+                <button class="accordion-item burger-2" onclick="showBox('Imagenes/burger2.jpg', 'La gourmet', 'Carne de buey con cebolla caramelizada, queso gorgonzola y salsa Strogonoff.')">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> La gourmet </h1>
+                        </div>
+                    </div>
                 </button>
-            </div>
-
-            <div class="container-picture">
-                <div class="food-image-container">
-                    <img src="Imagenes/burger3.jpg" class="food-image">
-                </div>
-
-                <div class="food-name">
-                    La gallega
-                </div>
-                <div class="overlay">
-
-                </div>
-                <button class="food-button"
-                    onclick="showModal('Imagenes/burger3.jpg', 'La gallega', 'Lomo bajo de rubia gallega madurada, queso artesano, pimientos rojos asados y tiras crujientes de bacon.')">
-
+                <button class="accordion-item burger-3"  onclick="showBox('Imagenes/burger3.jpg', 'La gallega', 'Lomo bajo de rubia gallega madurada, queso artesano, pimientos rojos asados y tiras crujientes de bacon.')">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> La gallega </h1>
+                        </div>
+                    </div>
                 </button>
-            </div>
-
-            <div class="container-picture">
-                <div class="food-image-container">
-                    <img src="Imagenes/burger4.jpg" class="food-image">
-                </div>
-
-                <div class="food-name">
-                    Classic chicken
-                </div>
-                <div class="overlay">
-
-                </div>
-                <button class="food-button"
-                    onclick="showModal('Imagenes/burger4.jpg', 'Classic chicken', 'Contramuslos de pollo rebozados, con lechuga, tomate y salsa mayonesa. Todo ello en nuestro pan de cristal casero.')">
-
+                <button class="accordion-item burger-4" onclick="showBox('Imagenes/burger4.jpg', 'Classic chicken', 'Contramuslos de pollo rebozados, con lechuga, tomate y salsa mayonesa. Todo ello en nuestro pan de cristal casero.')">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> Classic Chicken </h1>
+                        </div>
+                    </div>
                 </button>
-            </div>
-
-            <div class="container-picture">
-                <div class="food-image-container">
-                    <img src="Imagenes/burger5.jpg" class="food-image">
-                </div>
-
-                <div class="food-name">
-                    Hard rock
-                </div>
-                <div class="overlay">
-
-                </div>
-                <button class="food-button"
-                    onclick="showModal('Imagenes/burger5.jpg', 'Hard rock', 'Carne de vacuno con queso fundido, bacon, rúcula y dos aros de cebolla gigantes.')">
-
+                <button class="accordion-item burger-5" onclick="showBox('Imagenes/burger5.jpg', 'Hard rock', 'Carne de vacuno con queso fundido, bacon, rúcula y dos aros de cebolla gigantes.')">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> Hard rock </h1>
+                        </div>
+                    </div>
                 </button>
+
             </div>
-
-
         </div>
-
-
 
 
     </div>
 
 
-
-
-
-    <!-- ---------     COSTILLAS -----------    -->
+    <!---------   RIBS  ------------->
 
     <div class="container-ribs">
         <div class="overlay-burgers-ribs">
@@ -181,15 +130,15 @@
             </div>
             <div class="menu-ribs">
                 <button class="button-ribs"
-                    onclick="showModal('Imagenes/ribs1.jpeg', 'Costillar ibérico', 'Costillar de cerdo Ibérico elaborado a la parrilla, con salsa de sirope de arce y BBQ.')">
+                    onclick="showBox('Imagenes/ribs1.jpeg', 'Costillar ibérico', 'Costillar de cerdo Ibérico elaborado a la parrilla, con salsa de sirope de arce y BBQ.')">
                     Costillar ibérico
                 </button>
                 <button class="button-ribs"
-                    onclick="showModal('Imagenes/ribs2.jpg', 'Costillar BBQ', 'Costillas de cerdo maceradas en nuestra auténtica salsa bbq. Asadas muy lentamente a la parrilla para los que no dejan nada de carne en el hueso.')">
+                    onclick="showBox('Imagenes/ribs2.jpg', 'Costillar BBQ', 'Costillas de cerdo maceradas en nuestra auténtica salsa bbq. Asadas muy lentamente a la parrilla para los que no dejan nada de carne en el hueso.')">
                     Costillar BBQ
                 </button>
                 <button class="button-ribs"
-                    onclick="showModal('Imagenes/ribs3.jpg','Costillar picante', 'El caramelizado es una de las formas más tradicionales de preparar las costillas en estados Unidos de América. Aquí incluimos una receta con toque picante que realza perfectamente el sabor de este exquisito manjar.')">
+                    onclick="showBox('Imagenes/ribs3.jpg','Costillar picante', 'El caramelizado es una de las formas más tradicionales de preparar las costillas en estados Unidos de América. Aquí incluimos una receta con toque picante que realza perfectamente el sabor de este exquisito manjar.')">
                     Costillar picante
                 </button>
             </div>
@@ -237,23 +186,6 @@
 
     </div>
 
-    <!-- MODAL -->
-
-    <div class="modal">
-        <div class="modal-container">
-            <img class="picture-modal">
-            <button class="close-icon-button" onclick="hideModal()"> <svg xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000" viewBox="0 0 50 50" width="10px" height="10px">
-                    <path
-                        d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
-                </svg> </button>
-            <div class="modal-text">
-                <div class="title"> Title</div>
-                <div class="myDescription"></div>
-                <button class="close-button" onclick="hideModal()"> Cerrar </button>
-            </div>
-        </div>
-    </div>
 
 
 
