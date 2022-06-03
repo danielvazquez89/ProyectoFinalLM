@@ -77,3 +77,26 @@ function _scrollDesserts() {
         behavior: 'smooth'
     });
 }
+
+function openDropDown() {
+    var dropdownContent = document.querySelector('.dropdown');
+    var headerNav = document.querySelector('.header-nav');
+    var header = document.querySelector('.navbar');
+    var menuContainer = document.querySelector('.menu-container');
+    //var svgIcon =  document.querySelector('.flecha-abajo');
+    var isOpen = dropdownContent.classList.contains('open');
+
+    if (isOpen) {
+        dropdownContent.classList.remove('open');
+        headerNav.classList.remove('open');
+        header.classList.remove('open');
+        menuContainer.classList.remove('open');
+        //svgIcon.classList.remove('open');
+    } else {
+        dropdownContent.classList.add('open');
+        headerNav.classList.add('open');
+        header.classList.add('open');
+        menuContainer.classList.add('open');
+        //svgIcon.classList.add('open');
+    }
+}
