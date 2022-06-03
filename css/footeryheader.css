@@ -84,6 +84,28 @@
   opacity: 0.75;
 }
 
+.arrow-up.visible {
+  opacity: 1;
+}
+
+
+.arrow-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 2;
+  background: none;
+  border: none;
+  padding: 0px;
+  opacity: 0;
+  transition: .4s opacity;
+}
+
+.arrow-up-svg {
+  fill: #0000009e;
+}
+
 .footer-dark .item.social>a:hover {
   opacity: 0.9;
 }

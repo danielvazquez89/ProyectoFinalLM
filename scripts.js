@@ -122,6 +122,7 @@ function showBox(param1, param2, param3) {
     	modal.classList.add('show');
         console.log('hola');
    }
+}
     
 
 
@@ -134,5 +135,4 @@ document.addEventListener('click', function(e) {
       button.classList.remove('show');
       console.log('adiós');
   }
-})
-}
+});
