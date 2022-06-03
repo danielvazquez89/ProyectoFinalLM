@@ -25,8 +25,6 @@
 }
 
 .form-title-tc{
-
-    
     display: flex;
     justify-content: center;
     font-size: 50px;
@@ -42,13 +40,11 @@
     font-size: 25px;
     font-weight: bold;
     color: #3a4047;
-    margin-left: 120px;
-    margin-right: 120px;
     margin-top: 70px;
 }
-.form-inputs-tc{
-    margin-left: 120px;
-    margin-right: 120px;
+.form-content{
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .form-input-tc{
     width: 100%;
@@ -62,12 +58,12 @@
     margin-top: 15px;
 }
 .form-date{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
     display: flex;
     justify-content:center;
 }
-.date-select{
+.date-select-year,.date-select-month,.date-select-day{
     font-size: 23px;
     width: 30%;
     margin-top: 15px;
@@ -79,6 +75,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom-width:2px ;
 }
 .textarea,.textarea2 {
     display: block;
@@ -123,3 +120,149 @@
   .documents{
     width: 100%;
   }
+  .button-tc{
+      width: 100%;
+      margin-top: 70px;
+      margin-bottom: 10px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      outline: none;
+      border:none ;
+      border-radius:8px ;
+      background-color: #3a4047;
+      color: white;
+      font-size: 23px;
+      font-weight: bold;
+  }
+  .custom-input-file {
+ 
+    width: 185px!important;
+    color: #3a4047;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 8px;
+    position: relative;
+    text-align: center;
+    border: 2px solid #3a4047;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .custom-input-file .input-file {
+   border: 10000px solid transparent;
+   cursor: pointer;
+   font-size: 10000px;
+   margin: 0;
+   opacity: 0;
+   outline: 0 none;
+   padding: 0;
+   position: absolute;
+   right: -1000px;
+   top: -1000px;
+  }
+  @media (max-width:950px) {
+    .form-tc {
+        width: 86%;
+    }
+    .form-title-tc{
+        font-size: 40px;
+    }
+    .form-subtitle-tc{
+        font-size: 20px;
+       
+    }
+    .form-caption-tc{
+        font-size: 22px;
+        font-weight: bold;
+        color: #3a4047;
+        margin-top: 70px;
+    }
+    .custom-input-file,.form-input-tc, .date-select, .select {
+        font-size: 18px;
+        min-width: 75px;
+      }
+      .date-select-year{
+        min-width: 88px;
+        margin-left: 2%;
+      }
+      .date-select-day{
+        min-width: 73px;
+        margin-right: 2%;
+      }
+      .date-select-month{
+      min-width: 155px;
+      margin-left: 2%;
+      margin-right: 2%;
+      }
+      .button-tc{
+        font-size: 20px;
+    }
+    .textarea,.textarea2 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+  
+  
+}
+@media (max-width:650px) {
+    .form-date{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .date-select-year{
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+      }
+      .date-select-day{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .date-select-month{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    
+  }
+  @media (max-width:565px) {
+    .form-tc {
+        width: 80%;
+    }
+    .form-title-tc{
+        font-size: 30px;
+    }
+    .form-subtitle-tc{
+        font-size: 15px;
+    }
+    .form-caption-tc{
+        font-size: 17px;
+      
+    }
+    .form-content{
+        margin-left: 15%;
+        margin-right: 15%;
+       }
+       .custom-input-file,.form-input-tc, .date-select, .select {
+        font-size: 15px;
+        min-width: 75px;
+      }
+      .date-select-day, .date-select-month, .date-select-year{
+        font-size: 15px;
+        margin-left: 0px;
+      }
+      .form-date{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .textarea,.textarea2 {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    .button-tc{
+        font-size: 17px;
+    }
+}

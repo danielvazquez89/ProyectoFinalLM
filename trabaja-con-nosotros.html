@@ -40,19 +40,19 @@
         <div class="form-tc">
             <div class="form-title-tc">Inscríbete</div>
             <div class="form-subtitle-tc">Desarrolla tu carrera profesional</div>
-            <div class="form-caption-tc">Contacto</div>
-            <div class="form-inputs-tc">
+            <div class="form-content">
+                <div class="form-caption-tc">Contacto</div>
                 <input type="text" placeholder="Correo" class="form-input-tc">
                 <input type="text" placeholder="Teléfono" class="form-input-tc">
-            </div>
-            <div class="form-caption-tc">Datos Personales</div>
-            <div class="form-inputs-tc">
+
+                <div class="form-caption-tc">Datos Personales</div>
                 <input type="text" placeholder="Nombre" class="form-input-tc">
                 <input type="text" placeholder="Apellidos" class="form-input-tc">
+
+                <div class="form-caption-tc">Fecha de nacimiento</div>
             </div>
-            <div class="form-caption-tc">Fecha de nacimiento</div>
             <div class="form-date">
-                <select class="date-select">
+                <select class="date-select-day">
                     <option selected disabled selected hidden>Día</option>
                     <option>1</option>
                     <option>2</option>
@@ -86,22 +86,22 @@
                     <option>30</option>
                     <option>31</option>
                 </select>
-                <select class="date-select">
+                <select class="date-select-month">
                     <option selected disabled selected hidden>Mes</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
+                    <option>Enero</option>
+                    <option>Febrero</option>
+                    <option>Marzo</option>
+                    <option>Abril</option>
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                    <option>Julio</option>
+                    <option>Agosto</option>
+                    <option>Septiembre</option>
+                    <option>Octubre</option>
+                    <option>Noviembre</option>
+                    <option>Diciembre</option>
                 </select>
-                <select class="date-select">
+                <select class="date-select-year">
                     <option selected disabled selected hidden>Año</option>
                     <option>1932</option>
                     <option>1933</option>
@@ -182,54 +182,58 @@
                 </select>
 
             </div>
-            <div class="form-inputs-tc"> <input type="text" placeholder="Nacionalidad" class="form-input-tc"></div>
-            <div class="form-caption-tc">Lugar de residencia</div>
-            <div class="form-inputs-tc">
-                <input type="text" placeholder="Introduce tu dirección" class="form-input-tc">
-            </div>
-            <div class="form-caption-tc">Formación</div>
-            <div class="form-inputs-tc">
-                <input type="text" placeholder="Formación" class="form-input-tc">
-                <span class="textarea" role="textbox" contenteditable></span></p>
-            </div>
-            <div class="form-caption-tc">Idiomas</div>
-            <div class="form-inputs-tc">
-                <input type="text" placeholder="Idiomas (nivel alto)" class="form-input-tc">
-                <input type="text" placeholder="Idiomas (nivel intermedio)" class="form-input-tc">
-                <input type="text" placeholder="Idiomas (nivel básico)" class="form-input-tc">
-            </div>
-            <div class="form-caption-tc">Habilidades, Competencias y Conocimientos</div>
-            <div class="form-inputs-tc">
+            <div class="form-content">
+                <div class="form-caption-tc">Lugar de residencia</div>
+                <div class="form-inputs-tc">
+                    <input type="text" placeholder="Introduce tu dirección" class="form-input-tc">
+                </div>
+                <div class="form-caption-tc">Formación</div>
+                <div class="form-inputs-tc">
+                    <input type="text" placeholder="Formación" class="form-input-tc">
+                    <span class="textarea" role="textbox" contenteditable></span></p>
+                </div>
+                <div class="form-caption-tc">Idiomas</div>
+                <div class="form-inputs-tc">
+                    <input type="text" placeholder="Idiomas (nivel alto)" class="form-input-tc">
+                    <input type="text" placeholder="Idiomas (nivel intermedio)" class="form-input-tc">
+                    <input type="text" placeholder="Idiomas (nivel básico)" class="form-input-tc">
+                </div>
+                <div class="form-caption-tc">Habilidades, Competencias y Conocimientos</div>
+                <div class="form-inputs-tc">
 
 
-                <span class="textarea2" role="textbox" contenteditable></span></p>
-                <select class="select">
-                    <option selected disabled selected hidden>Nivel de informática</option>
-                    <option>Avanzado</option>
-                    <option>Medio</option>
-                    <option>Bajo</option>
-                </select>
+                    <span class="textarea2" role="textbox" contenteditable></span></p>
+                    <select class="select">
+                        <option selected disabled selected hidden>Nivel de informática</option>
+                        <option>Avanzado</option>
+                        <option>Medio</option>
+                        <option>Bajo</option>
+                    </select>
 
 
 
-            </div>
-            <div class="form-caption-tc">Logística</div>
-            <div class="form-inputs-tc">
-                <select class="select">
-                    <option selected disabled selected hidden>Permiso de conducir</option>
-                    <option>Sí</option>
-                    <option>No</option>
-                </select>
-                <select class="select">
-                    <option selected disabled selected hidden>Vehiculo propio</option>
-                    <option>Sí</option>
-                    <option>No</option>
-                </select>
-            </div>
-            <div class="form-caption-tc">Documentos:CV</div>
-            <div class="form-inputs-tc">
-                <input type="file" class="documents">
-                <button>Validar</button>
+                </div>
+                <div class="form-caption-tc">Logística</div>
+                <div class="form-inputs-tc">
+                    <select class="select">
+                        <option selected disabled selected hidden>Permiso de conducir</option>
+                        <option>Sí</option>
+                        <option>No</option>
+                    </select>
+                    <select class="select">
+                        <option selected disabled selected hidden>Vehiculo propio</option>
+                        <option>Sí</option>
+                        <option>No</option>
+                    </select>
+                </div>
+                <div class="form-caption-tc">Documentos:CV</div>
+                <div class="form-inputs-tc">
+                    <div class="custom-input-file col-md-6 col-sm-6 col-xs-6">
+                        <input type="file" id="fichero-tarifas" class="input-file" value="">
+                        Subir fichero...
+                        </div>
+                    <button class="button-tc">Validar</button>
+                </div>
             </div>
         </div>
 
@@ -268,7 +272,7 @@
                 <p class="copyright">Company Name © 2018</p>
             </div>
         </footer>
-        
+
     </div>
 </body>
 
