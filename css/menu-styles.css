@@ -15,42 +15,29 @@ body {
     color: red;
     margin-left: 15px;
     margin-top: 5px;
-  }
+}
 
-  .food-name {
-    font-size: 40px;
-    position: absolute;
-  }
 
-  .food-button {
+.food-image {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
+}
 
-  .food-image {
-    position: absolute;
+.picture {
     width: 400px;
     height: 400px;
-  }
+}
 
-  .picture {
-    width: 400px;
-    height: 400px;
-  }
-
-  .container-picture {
+.container-picture {
     position: relative;
     background-size: 350px 350px;
     width: 350px;
     height: 350px;
     transition: transform .2s;
-  }
+}
 
-  .overlay {
+.overlay {
     position: absolute;
     top: 0;
     width: 400px;
@@ -63,28 +50,28 @@ body {
     color: white;
     font-size: 20px;
     cursor: pointer;
-  }
+}
 
-  .container-picture:hover .overlay {
+.container-picture:hover .overlay {
     opacity: 1;
-  }
+}
 
-  .container-picture:hover .food-name {
+.container-picture:hover .food-name {
     color: white;
-  }
+}
 
-  .container-picture:hover {
-    transform: scale(1.1);  
-  }
+.container-picture:hover {
+    transform: scale(1.1);
+}
 
-.button-ribs{
+.button-ribs {
     width: 200px;
     height: 80px;
     border: 4px solid white;
     color: white;
     font-weight: bold;
     font-size: 25px;
-    background:transparent;
+    background: transparent;
     margin: 5px;
     cursor: pointer;
     transition: transform .2s;
@@ -101,8 +88,8 @@ body {
     height: 100vh;
     position: relative;
     background-image: url(../Imagenes/grill_background.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,15 +102,15 @@ body {
     height: 100vh;
     position: relative;
     background-image: url(../Imagenes/ribs-background.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
 }
 
-.subcontainer-ribs{
+.subcontainer-ribs {
     position: absolute;
     width: 70%;
     height: 400px;
@@ -140,7 +127,7 @@ body {
 }
 
 
-.ribs-gallery{
+.ribs-gallery {
     display: flex;
     padding-top: 45px;
     flex-flow: row wrap;
@@ -149,43 +136,26 @@ body {
     margin: auto;
 }
 
-.container-desserts{
+.container-desserts {
     width: 100%;
     height: 100vh;
-    position: relative;
     background-image: url(../Imagenes/white_wood_background.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 5px;
 }
 
-.overlay-dessert{
-    position: absolute; 
-    bottom: 0; 
-    width: 400px;
-    height: 500px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-}
 
-.food-image-container{
+
+.food-image-container {
     position: absolute;
 }
 
 
-.desserts{
+.desserts {
     position: relative;
     background-size: 400px 500px;
     width: 400px;
@@ -198,12 +168,12 @@ body {
     transform: scale(1.1);
 }
 
-.desserts:hover .overlay-dessert{
+.desserts:hover .overlay-dessert {
     opacity: 1;
     top: 0;
 }
 
-.dessert-image{
+.dessert-image {
     display: block;
     border-radius: 5px;
     position: absolute;
@@ -211,25 +181,27 @@ body {
     height: 500px;
 }
 
-
-.desserts-invitation{
+.desserts-menu {
     position: relative;
-    margin-left: 20px;
-    margin-top: 10px;
-    width: 30%;
-    height: 100vh;
-    color: white;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 55px;
-}
-
-.desserts-menu{
-    width: 70%;
-    height: 100vh;
+    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 3px;
 }
+
+
+.desserts-invitation {
+    width: 30%;
+    height: fit-content;
+    color: black;
+    padding-top: 60px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 60px;
+    margin-left: 5%;
+    margin-bottom: 20%;
+}
+
 
 
 .header {
@@ -258,12 +230,12 @@ body {
 
 .button-food {
     height: 80px;
-    width: 15%;
+    width: 25%;
     background: transparent;
     cursor: pointer;
     border: none;
     font-size: 20px;
-    font-family: 'Abril Fatface', cursive;
+    font-family: "Playfair Display", Georgia, serif;
 }
 
 .button-food:hover {
@@ -271,7 +243,7 @@ body {
 }
 
 .title-burgers {
-    margin-top:0;
+    margin-top: 0;
     background-color: orange;
     padding-left: 35px;
     margin-left: auto;
@@ -286,7 +258,7 @@ body {
     justify-content: center;
 }
 
-.title-food{
+.title-food {
     font-size: 40px;
     font-family: 'Luckiest Guy', cursive;
     color: white;
@@ -296,7 +268,7 @@ body {
     justify-content: center;
 }
 
-.menu-ribs{
+.menu-ribs {
     width: 100%;
     height: 320px;
     display: flex;
@@ -331,7 +303,7 @@ body {
 }
 
 
-.yellow{
+.yellow {
     width: 100%;
     height: 800px;
     background-color: yellow;
@@ -420,23 +392,23 @@ span {
     width: 100%;
     height: 100%;
 
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    visibility: hidden;    
-    opacity: 0;    
+
+    visibility: hidden;
+    opacity: 0;
 
 }
 
 .show {
     visibility: visible;
     opacity: 1;
-    display:block !important;
+    display: block !important;
 }
 
-.modal-container{
+.modal-container {
     position: absolute;
     width: 540px;
     height: 625px;
@@ -445,14 +417,14 @@ span {
     transform: translate(-50%, -50%);
 }
 
-._picture-modal{
+._picture-modal {
     width: 540px;
     height: 440px;
     display: flex;
     flex-direction: column;
 }
 
-.modal-text{
+.modal-text {
     background-color: #ffffff;
     width: 540px;
     height: 150px;
@@ -463,25 +435,25 @@ span {
     font-size: 15px;
 }
 
-.modal-title{
+.modal-title {
     font-size: 20px;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.close-button{
+.close-button {
     width: 80px;
     margin-top: 15px;
     display: block;
 }
 
-.close-icon-button{
-    position:absolute;
+.close-icon-button {
+    position: absolute;
     margin-bottom: 3px;
-    top:0;
-    right:0;
-    width:20px;
-    height:20px;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -497,36 +469,56 @@ span {
 
 /*-------- ACCORDION ---------*/
 
-.burger-1{
+.burger-1 {
     background-image: url(../Imagenes/burger1.jpg);
 }
 
-.burger-2{
+.burger-2 {
     background-image: url(../Imagenes/burger2.jpg);
 }
 
-.burger-3{
+.burger-3 {
     background-image: url(../Imagenes/burger3.jpg);
 }
 
-.burger-4{
+.burger-4 {
     background-image: url(../Imagenes/burger4.jpg);
 }
 
-.burger-5{
+.burger-5 {
     background-image: url(../Imagenes/burger5.jpg);
 }
 
-.accordion-container{
+
+.cheese-cake {
+    background-image: url(../Imagenes/Cheesecake.jpg);
+}
+
+.brownie {
+    background-image: url(../Imagenes/brownie.jpg);
+}
+
+.accordion-container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    padding:20px;
+    padding: 20px;
 }
 
-.accordion-gallery{
+.accordion-container-desserts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 60%;
+    padding: 20px;
+    margin-right: 2%;
+}
+
+
+.accordion-gallery {
     display: flex;
     width: 100%;
     height: 500px;
@@ -535,7 +527,16 @@ span {
     box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.54);
 }
 
-.accordion-item{
+.accordion-gallery-dessert {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    line-height: 1.6em;
+    border: 7px solid;
+    box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.54);
+}
+
+.accordion-item {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -547,24 +548,24 @@ span {
     border: none;
 }
 
-.accordion-item:hover{
+.accordion-item:hover {
     flex: 3 1 0%;
 }
 
-.accordion-content *{
+.accordion-content * {
     visibility: hidden;
     opacity: 0;
     transform-style: preserve-3d;
 }
 
-.accordion-item:hover .accordion-content *{
+.accordion-item:hover .accordion-content * {
     visibility: visible;
     opacity: 1;
     transform: none;
     transition: all .3s;
 }
 
-.accordion-content{
+.accordion-content {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
@@ -581,20 +582,95 @@ span {
     visibility: hidden;
 }
 
-.accordion-item:hover .accordion-content{
+.accordion-item:hover .accordion-content {
     visibility: visible;
 }
 
-.accordion-title{
+.accordion-title {
     font-size: 60px;
     color: white;
     font-family: 'Luckiest Guy', cursive;
-    transform: translate3d(0, -60px,0);
+    transform: translate3d(0, -60px, 0);
     line-height: 1;
 }
 
-@media screen and (max-width: 600px){
-    .accordion-gallery{
+
+
+@media screen and (max-width: 1375px) {
+
+    .dessert-image {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+
+@media screen and (max-width: 1346px) {
+
+    .dessert-image {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .dessert-image {
+        width: 250x;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .dessert-image {
+        width: 200x;
+        height: 200px;
+    }
+
+    .desserts-menu {
+        background-color: green;
+        height: 100vh;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
+        margin: auto;
+    }
+
+    .desserts-invitation{
+        font-size: 40px;
+    }
+
+    .modal-container{
+        width: 440px;
+        height: 525px;
+    }
+
+    ._picture-modal{
+        width: 440px;
+        height: 340px;
+    }
+
+    .modal-text{
+        width: 440px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .accordion-gallery {
+        flex-direction: column;
+    }
+
+    .accordion-gallery-dessert{
+        flex-direction: column;
+    }
+
+    .desserts-invitation{
+        font-size:30px;
+    }
+
+    .accordion-title{
+        font-size: 40px;
     }
 }

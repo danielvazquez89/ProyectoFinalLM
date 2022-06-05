@@ -40,23 +40,22 @@
     </header>
 
     <div class="second-menu">
-        <button class="button-food" onclick="_scrollBurgers()">
+        <button class="button-food" onclick="_scroll_through_Menu('burgers-options')">
             Hamburguesas
         </button>
-        <button class="button-food" onclick=" _scrollRibs()">
+        <button class="button-food" onclick="_scroll_through_Menu('ribs-options')">
             Costillas
         </button>
-        <button class="button-food" onclick="_scrollDesserts()">
+        <button class="button-food" onclick="_scroll_through_Menu('desserts-options')">
             Postres
         </button>
 
     </div>
 
 
-    <!-- MODAL -->
 
 
-    <div class="container-burgers">
+    <div id="burgers-options" class="container-burgers">
 
 
         <div class="modal">
@@ -75,35 +74,40 @@
         </div>
         <div class="accordion-container">
             <div class="accordion-gallery">
-                <button class="accordion-item burger-1" onclick="showBox('Imagenes/burger1.jpg', 'Viva la trufa', 'Dos carnes de vacuno maduradas al estilo smash (crujiente por fuera y jugosa por dentro), salsa de trufa y setas de temporada, montado en dos revanadas de pan brioche.')">
+                <button class="accordion-item burger-1"
+                    onclick="showBox('Imagenes/burger1.jpg', 'Viva la trufa', 'Dos carnes de vacuno maduradas al estilo smash (crujiente por fuera y jugosa por dentro), salsa de trufa y setas de temporada, montado en dos revanadas de pan brioche.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> Viva la trufa </h1>
                         </div>
                     </div>
                 </button>
-                <button class="accordion-item burger-2" onclick="showBox('Imagenes/burger2.jpg', 'La gourmet', 'Carne de buey con cebolla caramelizada, queso gorgonzola y salsa Strogonoff.')">
+                <button class="accordion-item burger-2"
+                    onclick="showBox('Imagenes/burger2.jpg', 'La gourmet', 'Carne de buey con cebolla caramelizada, queso gorgonzola y salsa Strogonoff.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> La gourmet </h1>
                         </div>
                     </div>
                 </button>
-                <button class="accordion-item burger-3"  onclick="showBox('Imagenes/burger3.jpg', 'La gallega', 'Lomo bajo de rubia gallega madurada, queso artesano, pimientos rojos asados y tiras crujientes de bacon.')">
+                <button class="accordion-item burger-3"
+                    onclick="showBox('Imagenes/burger3.jpg', 'La gallega', 'Lomo bajo de rubia gallega madurada, queso artesano, pimientos rojos asados y tiras crujientes de bacon.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> La gallega </h1>
                         </div>
                     </div>
                 </button>
-                <button class="accordion-item burger-4" onclick="showBox('Imagenes/burger4.jpg', 'Classic chicken', 'Contramuslos de pollo rebozados, con lechuga, tomate y salsa mayonesa. Todo ello en nuestro pan de cristal casero.')">
+                <button class="accordion-item burger-4"
+                    onclick="showBox('Imagenes/burger4.jpg', 'Classic chicken', 'Contramuslos de pollo rebozados, con lechuga, tomate y salsa mayonesa. Todo ello en nuestro pan de cristal casero.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> Classic Chicken </h1>
                         </div>
                     </div>
                 </button>
-                <button class="accordion-item burger-5" onclick="showBox('Imagenes/burger5.jpg', 'Hard rock', 'Carne de vacuno con queso fundido, bacon, rúcula y dos aros de cebolla gigantes.')">
+                <button class="accordion-item burger-5"
+                    onclick="showBox('Imagenes/burger5.jpg', 'Hard rock', 'Carne de vacuno con queso fundido, bacon, rúcula y dos aros de cebolla gigantes.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> Hard rock </h1>
@@ -120,7 +124,7 @@
 
     <!---------   RIBS  ------------->
 
-    <div class="container-ribs">
+    <div id="ribs-options" class="container-ribs">
         <div class="overlay-burgers-ribs">
 
         </div>
@@ -146,53 +150,29 @@
     </div>
 
 
-    <div class="container-desserts">
-        <div class="overlay-burgers-ribs">
+    <div id="desserts-options" class="container-desserts">
 
-        </div>
-        <div class="desserts-invitation">
-            Para los amantes del dulce...
-        </div>
-        <div class="desserts-menu">
-            <div class="desserts">
-
-                <div class="food-image-container">
-                    <img src="Imagenes/Cheesecake.jpg" class="dessert-image">
-                </div>
-
-                <div class="overlay-dessert">
-
-                </div>
-                <button class="food-button">
-
+        <div class="desserts-invitation"> Para los amantes del dulce... </div>
+        <div class="accordion-container-desserts">
+            <div class="accordion-gallery-dessert">
+                <button class="accordion-item cheese-cake">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> Cheescake </br> </br> ¡Calorías que merecen la pena! </h1>
+                        </div>
+                    </div>
+                </button>
+                <button class="accordion-item brownie">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> Brownie </br> </br> Jamás una mala elección </h1>
+                        </div>
+                    </div>
                 </button>
             </div>
-
-            <div class="desserts">
-
-                <div class="food-image-container">
-                    <img src="Imagenes/brownie.jpg" class="dessert-image">
-                </div>
-
-                <div class="overlay-dessert">
-
-                </div>
-                <button class="food-button">
-
-                </button>
-            </div>
-
         </div>
 
     </div>
-
-
-
-
-
-
-
-
 
 
     <button onclick="_scrollTop()" class="arrow-up">

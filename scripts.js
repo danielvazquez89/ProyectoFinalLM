@@ -61,27 +61,12 @@ function _scrollTop() {
     });
 }
 
-function _scrollBurgers() {
-    window.scroll({
-        top: 180,
-        behavior: 'smooth'
-    });
+
+function _scroll_through_Menu(param) {
+    const element = document.getElementById(param);
+    element.scrollIntoView();
 }
 
-
-function _scrollRibs() {
-    window.scroll({
-        top: 900,
-        behavior: 'smooth'
-    });
-}
-
-function _scrollDesserts() {
-    window.scroll({
-        top: 1618,
-        behavior: 'smooth'
-    });
-}
 
 function openDropDown() {
     var dropdownContent = document.querySelector('.dropdown');
