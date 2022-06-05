@@ -121,3 +121,116 @@ document.addEventListener('click', function(e) {
       console.log('adiós');
   }
 });
+
+/*JS Formulario*/
+function ValidateForm() {
+    const data = new Object();
+    data.email = document.getElementById('email').value;
+    data.phone = document.getElementById('phone').value;
+    data.firstName = document.getElementById('first-name').value;
+    data.lastName = document.getElementById('last-name').value;
+    data.birthdayMonth = document.getElementById('date-month').value
+    data.birthdayYear = document.getElementById('date-year').value
+    data.address = document.getElementById('address').value
+    data.formation = document.getElementById('formation').value
+    data.computingLevel = document.getElementById('computing-level').value
+    data.drivingLicense = document.getElementById('driving-license').value
+
+    ValidateError();
+    if (data.email == "" || data.phone == "" || data.firstName == "" || data.lastName == "" || data.birthdayMonth == "Mes*" || data.birthdayDay == "Día*" || data.birthdayYear == "Año*" || data.address == "" || data.formation == "" /*|| data.computingLevel == "" || data.drivingLicense == ""*/) {
+        alert("Por favor, introduce todos los campos obligatorios (*)")
+        document.getElementById('obligatory-fields').style.color = '#e94c4c';
+    } else {
+        alert("Se ha enviado tu información correctamente");
+        document.getElementById('obligatory-fields').style.color = 'gray';
+        CleanForm();
+    }
+
+
+}
+
+
+
+function ValidateError() {
+    if (document.getElementById('email').value == "") {
+        document.getElementById('email').classList.add('form-input-error');
+    } else {
+        document.getElementById('email').classList.remove('form-input-error')
+        document.getElementById('email').classList.add('form-input-tc');
+    }
+
+    if (document.getElementById('phone').value == "") {
+        document.getElementById('phone').classList.add('form-input-error');
+    } else {
+        document.getElementById('phone').classList.remove('form-input-error')
+        document.getElementById('phone').classList.add('form-input-tc');
+    }
+
+    if (document.getElementById('first-name').value == "") {
+        document.getElementById('first-name').classList.add('form-input-error');
+    } else {
+        document.getElementById('first-name').classList.remove('form-input-error')
+        document.getElementById('first-name').classList.add('form-input-tc');
+    }
+
+    if (document.getElementById('last-name').value == "") {
+        document.getElementById('last-name').classList.add('form-input-error');
+    } else {
+        document.getElementById('last-name').classList.remove('form-input-error')
+        document.getElementById('last-name').classList.add('form-input-tc');
+    }
+
+    if (document.getElementById('date-day').value == "" || document.getElementById('date-month').value == "" || document.getElementById('date-year').value == "") {
+        document.getElementById('date-day').style.borderColor = '#e94c4c';
+        document.getElementById('date-month').style.borderColor = '#e94c4c';
+        document.getElementById('date-year').style.borderColor = '#e94c4c';
+    } else {
+        document.getElementById('date-day').style.borderColor = 'gray';
+        document.getElementById('date-month').style.borderColor = 'gray';
+        document.getElementById('date-year').style.borderColor = 'gray';
+    }
+    if (document.getElementById('address').value == "") {
+        document.getElementById('address').classList.add('form-input-error');
+    } else {
+        document.getElementById('address').classList.remove('form-input-error')
+        document.getElementById('address').classList.add('form-input-tc');
+    }
+
+    if (document.getElementById('formation').value == "") {
+        document.getElementById('formation').classList.add('form-input-error');
+    } else {
+        document.getElementById('formation').classList.remove('form-input-error')
+        document.getElementById('formation').classList.add('form-input-tc');
+    }
+    if (document.getElementById('computing-level').value == "") {
+        document.getElementById('computing-level').style.borderColor = '#e94c4c';
+    } else {
+        document.getElementById('computing-level').style.borderColor = 'gray';
+    }
+    if (document.getElementById('driving-license').value == "") {
+        document.getElementById('driving-license').style.borderColor = '#e94c4c';
+    } else {
+        document.getElementById('driving-license').style.borderColor = 'gray';
+    }
+}
+
+function CleanForm() {
+    document.getElementById('email').value = "";
+    document.getElementById('phone').value = "";
+    document.getElementById('first-name').value = "";
+    document.getElementById('last-name').value = "";
+    document.getElementById('date-day').value = "";
+    document.getElementById('date-month').value = "";
+    document.getElementById('date-year').value = "";
+    document.getElementById('address').value = "";
+    document.getElementById('formation').value = "";
+    document.getElementById('textarea-formation').value = "";
+    document.getElementById('languages-high').value = "";
+    document.getElementById('languages-medium').value = "";
+    document.getElementById('languages-low').value = "";
+    document.getElementById('textarea-skills').value = "";
+    document.getElementById('computing-level').value = "";
+    document.getElementById('driving-license').value = "";
+    document.getElementById('vehicle').value = "";
+
+}
