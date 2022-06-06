@@ -15,28 +15,6 @@ function scrollUp() {
     });
 }
 
-function openSidebar() {
-    document.querySelector('.sidebar').classList.add('open');
-}
-
-function closeSidebar() {
-    document.querySelector('.sidebar').classList.remove('open');
-}
-function viewFullScreen() {
-    var imag = document.querySelector('.modal-image');
-    openFullscreen(imag);
-}
-
-function openFullscreen(elem) {
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-    }
-}
-
 function hideModal() {
     const modal = document.querySelector('.modal');
     modal.classList.remove('show');
