@@ -122,7 +122,7 @@ document.addEventListener('click', function(e) {
   }
 });
 
-/*JS Formulario*/
+/* -------------------JS Formulario -------------------*/
 function ValidateForm() {
     const data = new Object();
     data.email = document.getElementById('email').value;
@@ -138,18 +138,16 @@ function ValidateForm() {
 
     ValidateError();
     if (data.email == "" || data.phone == "" || data.firstName == "" || data.lastName == "" || data.birthdayMonth == "Mes*" || data.birthdayDay == "Día*" || data.birthdayYear == "Año*" || data.address == "" || data.formation == "" /*|| data.computingLevel == "" || data.drivingLicense == ""*/) {
-        alert("Por favor, introduce todos los campos obligatorios (*)")
+        showModal ("Debes rellenar los campos necesarios(*) para continuar")
         document.getElementById('obligatory-fields').style.color = '#e94c4c';
     } else {
-        alert("Se ha enviado tu información correctamente");
+        showModal ("Se ha enviado correctamente")
         document.getElementById('obligatory-fields').style.color = 'gray';
         CleanForm();
     }
 
 
 }
-
-
 
 function ValidateError() {
     if (document.getElementById('email').value == "") {
@@ -203,14 +201,16 @@ function ValidateError() {
         document.getElementById('formation').classList.add('form-input-tc');
     }
     if (document.getElementById('computing-level').value == "") {
-        document.getElementById('computing-level').style.borderColor = '#e94c4c';
+        document.getElementById('computing-level').classList.add('select-error');
     } else {
-        document.getElementById('computing-level').style.borderColor = 'gray';
+        document.getElementById('formation').classList.remove('select-error')
+        document.getElementById('formation').classList.add('select');
     }
     if (document.getElementById('driving-license').value == "") {
-        document.getElementById('driving-license').style.borderColor = '#e94c4c';
+        document.getElementById('driving-license').classList.add('select-error');
     } else {
-        document.getElementById('driving-license').style.borderColor = 'gray';
+        document.getElementById('formation').classList.remove('select-error')
+        document.getElementById('formation').classList.add('select');
     }
 }
 
@@ -231,6 +231,14 @@ function CleanForm() {
     document.getElementById('textarea-skills').value = "";
     document.getElementById('computing-level').value = "";
     document.getElementById('driving-license').value = "";
-    document.getElementById('vehicle').value = "";
+   
+
+}
+function showModal (string){
+    const modal = document.querySelector('.modal');
+    const text = document.querySelector('.text');
+    modal.classList.add('show');
+    text.innerHTML=string;
+
 
 }
