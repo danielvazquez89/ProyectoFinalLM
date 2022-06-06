@@ -181,14 +181,14 @@ function ValidateError() {
     if (document.getElementById('computing-level').value == "") {
         document.getElementById('computing-level').classList.add('select-error');
     } else {
-        document.getElementById('formation').classList.remove('select-error')
-        document.getElementById('formation').classList.add('select');
+        document.getElementById('computing-level').classList.remove('select-error')
+        document.getElementById('computing-level').classList.add('select');
     }
     if (document.getElementById('driving-license').value == "") {
         document.getElementById('driving-license').classList.add('select-error');
     } else {
-        document.getElementById('formation').classList.remove('select-error')
-        document.getElementById('formation').classList.add('select');
+        document.getElementById('driving-license').classList.remove('select-error')
+        document.getElementById('driving-license').classList.add('select');
     }
 }
 
