@@ -91,6 +91,11 @@
         display: flex;
         justify-content: center;
         vertical-align: center;
+        height: 100%;
+    }
+
+    .main-title {
+        margin-top: 210px !important;
     }
 
     .menu-container {
@@ -119,6 +124,13 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+    
+    .main-title {
+        padding: 40px !important;
+        font-size: 40px !important;
+    }
+}
 @media only screen and (max-width: 500px) {
     .menu-container {
         display: flex;
@@ -155,12 +167,6 @@ body {
     background: none;
     border: none;
 }
-
-
-.titles {
-    font-family: "Playfair Display", Georgia, serif;
-}
-
 
 .background-image-container {
     overflow: hidden;
