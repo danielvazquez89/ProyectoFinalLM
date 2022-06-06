@@ -5,6 +5,10 @@
     display: block;
 }
 
+* {
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
 
 /* Gallery */
 
@@ -50,7 +54,6 @@
 }
 
 #card .leftSideCard .titleDirection {
-    font-family: 'Old Standard TT', serif;
     display: inline-block;
     position: relative;
     font-size: 28px;
@@ -59,9 +62,8 @@
 }
 
 #card .leftSideCard>p {
-    font-family: 'Farsan', cursive;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     color: #7d7d7d;
 }
 
@@ -90,7 +92,6 @@
 
 .restaurantInfo {
     background: rgba(44, 44, 44, 0.9);
-    font-family: 'Farsan', cursive;
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
