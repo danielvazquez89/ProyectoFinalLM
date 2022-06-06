@@ -16,42 +16,39 @@
 
 
 <body>
-    <header>
-        <a href="./index.html" class="header-title titles">Hamburguesas Paco</a>
+    <header class="navbar">
+        <a href="./index.html" class="navbar-brand header-title titles">Hamburguesas Paco</a>
+        <div class="menu-container">
+            <button onclick="openDropDown()" class="menu-bars">
+                <img class="hamburguesa" src="./Imagenes/hamburgo.png">
+                <div class="dropdown"></div>
+            </button>
+        </div>
         <nav class="header-nav">
+            <a href="./index.html" class="header-nav-links">Inicio</a>
             <a href="./restaurants.html" class="header-nav-links">Restaurantes</a>
             <a href="./trabaja-con-nosotros.html" class="header-nav-links what-we-do-link">Trabaja Con Nosotros</a>
-            <a href="./menu.html" class="header-nav-links">Menu</a>
         </nav>
-        <div class="menu-container">
-            <div class="menu titles">Menu</div>
-            <button onclick="openSidebar()" class="menu-bars">
-                <div class="short-bar"></div>
-                <div class="long-bar"></div>
-                <div class="long-bar"></div>
-                <div class="short-bar"></div>
-            </button>
         </div>
     </header>
 
     <div class="second-menu">
-        <button class="button-food" onclick="_scrollBurgers()">
+        <button class="button-food" onclick="_scroll_through_Menu('burgers-options')">
             Hamburguesas
         </button>
-        <button class="button-food" onclick=" _scrollRibs()">
+        <button class="button-food" onclick="_scroll_through_Menu('ribs-options')">
             Costillas
         </button>
-        <button class="button-food" onclick="_scrollDesserts()">
+        <button class="button-food" onclick="_scroll_through_Menu('desserts-options')">
             Postres
         </button>
 
     </div>
 
 
-    <!-- MODAL -->
 
 
-    <div class="container-burgers">
+    <div id="burgers-options" class="container-burgers">
 
 
         <div class="modal">
@@ -70,35 +67,40 @@
         </div>
         <div class="accordion-container">
             <div class="accordion-gallery">
-                <button class="accordion-item burger-1" onclick="showBox('Imagenes/burger1.jpg', 'Viva la trufa', 'Dos carnes de vacuno maduradas al estilo smash (crujiente por fuera y jugosa por dentro), salsa de trufa y setas de temporada, montado en dos revanadas de pan brioche.')">
+                <button class="accordion-item burger-1"
+                    onclick="showBox('Imagenes/burger1.jpg', 'Viva la trufa', 'Dos carnes de vacuno maduradas al estilo smash (crujiente por fuera y jugosa por dentro), salsa de trufa y setas de temporada, montado en dos revanadas de pan brioche.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> Viva la trufa </h1>
                         </div>
                     </div>
                 </button>
-                <button class="accordion-item burger-2" onclick="showBox('Imagenes/burger2.jpg', 'La gourmet', 'Carne de buey con cebolla caramelizada, queso gorgonzola y salsa Strogonoff.')">
+                <button class="accordion-item burger-2"
+                    onclick="showBox('Imagenes/burger2.jpg', 'La gourmet', 'Carne de buey con cebolla caramelizada, queso gorgonzola y salsa Strogonoff.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> La gourmet </h1>
                         </div>
                     </div>
                 </button>
-                <button class="accordion-item burger-3"  onclick="showBox('Imagenes/burger3.jpg', 'La gallega', 'Lomo bajo de rubia gallega madurada, queso artesano, pimientos rojos asados y tiras crujientes de bacon.')">
+                <button class="accordion-item burger-3"
+                    onclick="showBox('Imagenes/burger3.jpg', 'La gallega', 'Lomo bajo de rubia gallega madurada, queso artesano, pimientos rojos asados y tiras crujientes de bacon.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> La gallega </h1>
                         </div>
                     </div>
                 </button>
-                <button class="accordion-item burger-4" onclick="showBox('Imagenes/burger4.jpg', 'Classic chicken', 'Contramuslos de pollo rebozados, con lechuga, tomate y salsa mayonesa. Todo ello en nuestro pan de cristal casero.')">
+                <button class="accordion-item burger-4"
+                    onclick="showBox('Imagenes/burger4.jpg', 'Classic chicken', 'Contramuslos de pollo rebozados, con lechuga, tomate y salsa mayonesa. Todo ello en nuestro pan de cristal casero.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> Classic Chicken </h1>
                         </div>
                     </div>
                 </button>
-                <button class="accordion-item burger-5" onclick="showBox('Imagenes/burger5.jpg', 'Hard rock', 'Carne de vacuno con queso fundido, bacon, rúcula y dos aros de cebolla gigantes.')">
+                <button class="accordion-item burger-5"
+                    onclick="showBox('Imagenes/burger5.jpg', 'Hard rock', 'Carne de vacuno con queso fundido, bacon, rúcula y dos aros de cebolla gigantes.')">
                     <div class="accordion-container">
                         <div class="accordion-content">
                             <h1 class="accordion-title"> Hard rock </h1>
@@ -115,7 +117,7 @@
 
     <!---------   RIBS  ------------->
 
-    <div class="container-ribs">
+    <div id="ribs-options" class="container-ribs">
         <div class="overlay-burgers-ribs">
 
         </div>
@@ -141,53 +143,29 @@
     </div>
 
 
-    <div class="container-desserts">
-        <div class="overlay-burgers-ribs">
+    <div id="desserts-options" class="container-desserts">
 
-        </div>
-        <div class="desserts-invitation">
-            Para los amantes del dulce...
-        </div>
-        <div class="desserts-menu">
-            <div class="desserts">
-
-                <div class="food-image-container">
-                    <img src="Imagenes/Cheesecake.jpg" class="dessert-image">
-                </div>
-
-                <div class="overlay-dessert">
-
-                </div>
-                <button class="food-button">
-
+        <div class="desserts-invitation"> Para los amantes del dulce... </div>
+        <div class="accordion-container-desserts">
+            <div class="accordion-gallery-dessert">
+                <button class="accordion-item cheese-cake">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> Cheescake </br> </br> ¡Calorías que merecen la pena! </h1>
+                        </div>
+                    </div>
+                </button>
+                <button class="accordion-item brownie">
+                    <div class="accordion-container">
+                        <div class="accordion-content">
+                            <h1 class="accordion-title"> Brownie </br> </br> Jamás una mala elección </h1>
+                        </div>
+                    </div>
                 </button>
             </div>
-
-            <div class="desserts">
-
-                <div class="food-image-container">
-                    <img src="Imagenes/brownie.jpg" class="dessert-image">
-                </div>
-
-                <div class="overlay-dessert">
-
-                </div>
-                <button class="food-button">
-
-                </button>
-            </div>
-
         </div>
 
     </div>
-
-
-
-
-
-
-
-
 
 
     <button onclick="_scrollTop()" class="arrow-up">
@@ -216,31 +194,32 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#">Catering</a></li>
+                            <li><a href="#">Eventos</a></li>
+                            <li><a href="#">Repartos</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
+                        <h3>Sobre Nosotros</h3>
                         <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Filosofía</a></li>
+                            <li><a href="#">Equipo</a></li>
+                            <li><a href="#">Carreras</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
-                            rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
-                            vel in justo.</p>
+                        <h3>Hamburguesas Paco</h3>
+                        <p>Nuestra misión siempre ha sido servir las mejores hamburguesas y además ser el mejor lugar
+                            para trabajar. Así lo recalcan nuestros valores; CALIDAD, EFICIENCIA Y BUEN ROLLO. Para
+                            lograrlo, proponemos diferentes iniciativas que invitan a todo nuestro staff a disfrutar de
+                            su trabajo, hacerlo con cariño y crecer juntos.</p>
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
                                 class="icon ion-social-twitter"></i></a><a href="#"><i
                                 class="icon ion-social-snapchat"></i></a><a href="#"><i
                                 class="icon ion-social-instagram"></i></a></div>
                 </div>
-                <p class="copyright">Company Name © 2018</p>
+                <p class="copyright">Hamburguesas Paco © 2028</p>
             </div>
         </footer>
     </div>
