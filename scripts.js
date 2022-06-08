@@ -74,30 +74,30 @@ function openDropDown() {
 function showBox(param1, param2, param3) {
 
     const modal = document.querySelector('.modal');
-        
+
     document.querySelector('._picture-modal').src = param1;
     document.querySelector('.modal-title').innerHTML = param2;
     document.querySelector('.modal-mydescription').innerHTML = param3;
-  
-  	if(modal.classList.contains('show')) {
-    	modal.classList.remove('show');
+
+    if (modal.classList.contains('show')) {
+        modal.classList.remove('show');
     } else {
-    	modal.classList.add('show');
+        modal.classList.add('show');
         console.log('hola');
-   }
+    }
 }
-    
 
 
-document.addEventListener('click', function(e) {
+
+document.addEventListener('click', function (e) {
     const clickedPaths = e.path;
     const button = document.querySelector('.modal');
     const modal = document.querySelector('.container-picture');
-  
-  if(!clickedPaths.includes(modal) && e.target == button) {
-      button.classList.remove('show');
-      console.log('adiós');
-  }
+
+    if (!clickedPaths.includes(modal) && e.target == button) {
+        button.classList.remove('show');
+        console.log('adiós');
+    }
 });
 
 /* -------------------JS Formulario -------------------*/
@@ -116,10 +116,10 @@ function ValidateForm() {
 
     ValidateError();
     if (data.email == "" || data.phone == "" || data.firstName == "" || data.lastName == "" || data.birthdayMonth == "Mes*" || data.birthdayDay == "Día*" || data.birthdayYear == "Año*" || data.address == "" || data.formation == "" /*|| data.computingLevel == "" || data.drivingLicense == ""*/) {
-        showModal ("Debes rellenar los campos necesarios(*) para continuar")
+        showModal("Debes rellenar los campos necesarios(*) para continuar")
         document.getElementById('obligatory-fields').style.color = '#e94c4c';
     } else {
-        showModal ("Se ha enviado correctamente")
+        showModal("Se ha enviado correctamente")
         document.getElementById('obligatory-fields').style.color = 'gray';
         CleanForm();
     }
@@ -209,14 +209,14 @@ function CleanForm() {
     document.getElementById('textarea-skills').value = "";
     document.getElementById('computing-level').value = "";
     document.getElementById('driving-license').value = "";
-   
+
 
 }
-function showModal (string){
+function showModal(string) {
     const modal = document.querySelector('.modal');
     const text = document.querySelector('.text');
     modal.classList.add('show');
-    text.innerHTML=string;
+    text.innerHTML = string;
 
 
 }

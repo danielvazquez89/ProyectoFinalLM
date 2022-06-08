@@ -15,17 +15,18 @@
   transition: visibility .2s, opacity .2s;
 
 }
-.modal-button{
+
+.modal-button {
   margin-bottom: 12px;
   width: 200px;
   border-radius: 8px;
   font-size: 18px;
   font-weight: bold;
- padding-left: 10px;
- padding-right: 10px;
- padding-top: 5px;
- padding-bottom: 5px;
- background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
   border-color: #282d32;
   color: #282d32;
 }
@@ -222,8 +223,8 @@
   border-color: gray;
 }
 
-.select-error{
-  border-color:#e94c4c;
+.select-error {
+  border-color: #e94c4c;
 }
 
 .documents {
@@ -244,7 +245,8 @@
   font-size: 23px;
   font-weight: bold;
 }
-.button-tc:hover{
+
+.button-tc:hover {
   transition: all 0.3s ease;
   color: rgb(255, 255, 255);
   background-color: #30353b;

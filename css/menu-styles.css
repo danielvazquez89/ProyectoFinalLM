@@ -637,21 +637,21 @@ span {
         margin: auto;
     }
 
-    .desserts-invitation{
+    .desserts-invitation {
         font-size: 40px;
     }
 
-    .modal-container{
+    .modal-container {
         width: 440px;
         height: 525px;
     }
 
-    ._picture-modal{
+    ._picture-modal {
         width: 440px;
         height: 340px;
     }
 
-    .modal-text{
+    .modal-text {
         width: 440px;
         height: 100px;
     }
@@ -662,15 +662,15 @@ span {
         flex-direction: column;
     }
 
-    .accordion-gallery-dessert{
+    .accordion-gallery-dessert {
         flex-direction: column;
     }
 
-    .desserts-invitation{
-        font-size:30px;
+    .desserts-invitation {
+        font-size: 30px;
     }
 
-    .accordion-title{
+    .accordion-title {
         font-size: 40px;
     }
 }
